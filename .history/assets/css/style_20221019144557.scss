@@ -1,0 +1,27 @@
+$blue-color: #23499F;
+$gray-l1: #f6f6f6;
+
+.app {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.ul {
+    list-style: none;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.Rectangle {
+    background-color: $gray-l1;
+    width: 1920px;
+    height: 43px;
+    margin: 0 0 18.8px;
+    padding: 9px 271px 12px 256px;
+}

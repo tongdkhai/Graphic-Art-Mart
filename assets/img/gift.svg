@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134" height="133.808" viewBox="0 0 134 133.808">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="gift" transform="translate(2.362 2)">
+    <path id="Path_37996" data-name="Path 37996" class="cls-1" d="M107.846,12V76.9H4V12" transform="translate(9.779 52.904)"/>
+    <rect id="Rectangle_1581" data-name="Rectangle 1581" class="cls-1" width="130" height="31" transform="translate(-0.362 33.62)"/>
+    <line id="Line_459" data-name="Line 459" class="cls-1" y1="96" transform="translate(64.638 33.62)"/>
+    <path id="Path_37997" data-name="Path 37997" class="cls-1" d="M50.433,34.452H21.226A16.226,16.226,0,0,1,21.226,2C43.942,2,50.433,34.452,50.433,34.452Z" transform="translate(15.27 -2)"/>
+    <path id="Path_37998" data-name="Path 37998" class="cls-1" d="M12,34.452H41.207A16.226,16.226,0,0,0,41.207,2C18.49,2,12,34.452,12,34.452Z" transform="translate(53.702 -2)"/>
+  </g>
+</svg>

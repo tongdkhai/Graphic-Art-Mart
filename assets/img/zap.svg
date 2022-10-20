@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120.827" height="133.808" viewBox="0 0 120.827 133.808">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <path id="zap" class="cls-1" d="M67.9,2,3,79.885H61.413l-6.49,51.923,64.9-77.885H61.413Z" transform="translate(-1)"/>
+</svg>

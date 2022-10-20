@@ -1,0 +1,378 @@
+$blue-color: #23499f;
+$gray-l-1: #f6f6f6;
+$text-color: #2a2a2a;
+$gray-m-1: #d9d9d9;
+$gray-d-1: #888888;
+$gray-d-3: #2a2a2a;
+$cerulean: #0497d8;
+
+.html {
+  font-size: 62.5%;
+}
+.app {
+  max-width: 1920px;
+  margin: 0 auto;
+  color: $text-color;
+}
+
+.ul {
+  list-style: none;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+
+// Button
+.Primary_BTN {
+  width: 104px;
+  height: 46px;
+  margin: -16px 59.6px 25px 440px;
+  padding: 15px 30px 16px;
+  background-color: $blue-color;
+  color: #fff;
+  //   border-radius-top-right: 10px;
+  //   border-radius-bottom-right: 10px;
+}
+
+.Rectangle {
+  background-color: $gray-l-1;
+  // width: 1920px;
+  height: 43px;
+  margin: 0 0 18.8px;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  &-2-5 {
+    width: 25%;
+  }
+  &__container {
+    @include flex(center, flex-start);
+  }
+  &__nav {
+    @include flex(flex-start);
+    margin: 9px 0 13px 0;
+    height: 19px;
+    width: 50%;
+    &--item {
+      margin-right: 25px;
+    }
+    &--title {
+      color: $blue-color;
+      font-weight: bold;
+    }
+  }
+  &__list {
+    @include flex(flex-start, space-between);
+    margin: 9px 0 13px 0;
+    height: 19px;
+    width: 50%;
+  }
+  &__item {
+    margin: 0 20px;
+    font-size: 16px;
+    height: 21px;
+    font-weight: bold;
+  }
+
+  &-161073 {
+    margin: 0 0 25px;
+    background-color: #fff;
+  }
+  &-161335 {
+    width: 20%;
+    height: 58.5px;
+    @include flex(center, flex-start);
+  }
+  &-161336 {
+    width: 30.5px;
+    height: 53.6px;
+    background-image: linear-gradient(
+      to right,
+      #700d14,
+      #8f0915 0%,
+      #a90616 0%,
+      #bf0417 0%,
+      #d00218 1%,
+      #dc0018 1%,
+      #e30018 1%,
+      #e50019 2%
+    );
+  }
+  &__logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  &-161314 {
+    width: 40%;
+    height: 48px;
+    margin: 24px 60.6px 25px 26px;
+    padding: 14.5px 287px 13.5px 16px;
+    border-radius: 10px;
+    border: solid 2px $gray-m-1;
+  }
+  &__contact {
+    width: 20%;
+    @include flex(center, space-between);
+  }
+  &__phone {
+    width: 24.4px;
+    height: 24.5px;
+    margin: 9.5px 5.8px 3px 0;
+    object-fit: contain;
+    border: solid 2px $gray-d-3;
+  }
+  &-Copy-4 {
+    width: 100%;
+    height: 50px;
+    background-color: #3b3a3b;
+    color: #fff;
+  }
+  &__container-4 {
+    @include flex(center, space-between);
+  }
+  &-Copy--list {
+    @include flex(center, space-between);
+    color: #fff;
+  }
+  &__login {
+    @include flex(center, flex-start);
+  }
+  &-Copy--item {
+    width: 74px;
+    height: 19px;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 16px 0 16px 40px;
+  }
+  &-161072 {
+    padding: 16px 33px 15px 37px;
+  }
+  &-161538 {
+    width: 100%;
+    height: 9px;
+    // margin: 35px 0 44px 81px;
+    border-radius: 4.5px;
+    border: solid 1px $gray-d-1;
+    position: relative;
+  }
+  &-161537 {
+    position: absolute;
+    width: 25%;
+    height: 9px;
+    // margin: 35px 12px 44px 0;
+    border-radius: 4.5px;
+    margin: 0;
+  }
+  &-161120 {
+  }
+}
+
+.Group {
+  &-172941 {
+    @include flex(flex-start);
+    width: 20%;
+    height: 48px;
+  }
+}
+
+.Default-welcome-msgl {
+  width: 126px;
+  height: 19px;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #505050;
+  @include flex(flex-start, space-between, wrap);
+}
+
+.Path {
+  &-262 {
+    width: 56.5px;
+    height: 37px;
+    margin: 5.5px 14px 5.5px 0;
+    background-color: $gray-d-3;
+  }
+  &-74 {
+    padding: 4.1px 9.6px 4.1px;
+    background-color: $cerulean;
+    border-radius: 20px;
+  }
+  &--text {
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+
+.Create-an-Account {
+  width: 166px;
+  height: 37px;
+  margin: 0 0 0 5.8px;
+  font-family: ProximaNova;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: $gray-d-3;
+}
+
+.Home {
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  &-Breadcrumbs {
+    margin: 25px 0 57px 0;
+  }
+  &-Category {
+    font-family: ProximaNova;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $gray-d-1;
+  }
+  &-Contact {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.Contact-Us {
+  width: 100%;
+  margin: 57px 26px 18px 0;
+  font-family: ProximaNova;
+  font-size: 42px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  color: $gray-d-3;
+}
+
+.Product {
+  &-Selection-Tool {
+    @include flex(center, center);
+    flex-direction: row;
+    width: 100%;
+    gap: 56px;
+    // margin: 18px 95px 3px 115px;
+    font-family: ProximaNova;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    border-bottom: 1px solid $blue-color;
+    margin-bottom: 35px;
+  }
+  &-Applications {
+    padding-bottom: 10px;
+  }
+  &-Questions {
+    padding-bottom: 10px;
+  }
+  &-Recommended-Products {
+    padding-bottom: 10px;
+  }
+}
+
+.active {
+  color: $cerulean;
+  border-bottom: 4px solid $cerulean;
+  &-application {
+    border: 1px solid $cerulean;
+    padding: 13px 12px 60px 12px;
+  }
+  &-scroll {
+    background-color: $cerulean;
+  }
+}
+
+.Hot-sellers {
+  height: 24px;
+  margin: 44px 24px 29px 0;
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: #505050;
+}
+
+.Application {
+  &__container {
+    @include flex(center);
+  }
+  &--item {
+    width: calc(25% - 12px);
+    height: 200px;
+    margin: 42px 24px 14px 0;
+    padding: 28.6px 93.6px 28.6px;
+    &:first-child {
+      background-color: $cerulean;
+    }
+    &:nth-child(2) {
+      background-color: red;
+    }
+    &:nth-child(3) {
+      background-color: green;
+    }
+    &:last-child {
+      background-color: $blue-color;
+    }
+  }
+}
