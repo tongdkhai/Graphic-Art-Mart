@@ -105,6 +105,7 @@ img {
   display: block;
 }
 .nav__checkbox:checked ~ .nav__mobile {
+  display: block;
   transform: translateX(0%);
 }
 .nav__overlay {
@@ -126,6 +127,7 @@ img {
   background-color: #fff;
   transform: translateX(100%);
   transition: transform linear 0.3s;
+  display: none;
   z-index: 1;
 }
 .nav__mobile--list {
@@ -144,6 +146,9 @@ img {
   letter-spacing: normal;
   text-align: left;
   color: #2a2a2a;
+}
+.nav__mobile--list a:hover {
+  color: #0497d8;
 }
 .nav__close--img {
   width: 20px;
@@ -193,7 +198,8 @@ img {
   background-color: transparent;
   font-size: 14px;
   flex-grow: 1;
-  margin-right: 235px;
+  margin-right: 190px;
+  min-width: 220px;
 }
 .header__button {
   background-color: #23499f;
@@ -269,7 +275,7 @@ img {
 .Rectangle__container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: nowrap;
 }
 .Rectangle__phone {

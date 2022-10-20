@@ -124,7 +124,6 @@ img {
       display: block;
     }
     &:checked ~ .nav__mobile {
-      display: block;
       transform: translateX(0%);
     }
 
@@ -146,9 +145,8 @@ img {
     width: 300px;
     max-width: 100%;
     background-color: #fff;
-    transform: translateX(100%);
+    transform: translateX(300%);
     transition: transform linear 0.3s;
-    display: none;
     z-index: 1;
     &--list {
       margin: 32px 0 0 32px;
@@ -159,9 +157,6 @@ img {
     &--list a {
       text-decoration: none;
       @include text(16px, bold);
-      &:hover {
-        color: $cerulean;
-      }
     }
   }
   &__close {
@@ -211,8 +206,7 @@ img {
     font-size: 14px;
     // font-family: ProximaNova;
     flex-grow: 1;
-    margin-right: 190px;
-    min-width: 220px;
+    margin-right: 235px;
   }
   &__button {
     background-color: $blue-color;
@@ -282,7 +276,7 @@ img {
   letter-spacing: normal;
   text-align: left;
   &__container {
-    @include flex(center, space-between);
+    @include flex(center, flex-start);
   }
 
   &__phone {
