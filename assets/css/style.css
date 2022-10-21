@@ -96,7 +96,6 @@ img {
 }
 .header__logo {
   width: 22%;
-  height: 58.5px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -287,11 +286,8 @@ img {
   cursor: pointer;
 }
 .header__mobile--list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  width: 30%;
+  display: none;
+  width: 25%;
 }
 .header__mobile--icon {
   margin-top: -10px;
@@ -312,12 +308,14 @@ img {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;
-  width: 30%;
+  width: 25%;
+  display: none;
 }
 .header__mobile--user {
   width: 30.5px;
   height: 30.5px;
   object-fit: contain;
+  margin: 0px 19px;
 }
 .header__mobile--cart {
   padding: 21px 19px;
@@ -344,24 +342,26 @@ img {
 .header__mobile--mobile {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 300px;
   max-width: 100%;
   background-color: #fff;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform linear 0.3s;
   display: none;
   z-index: 1;
 }
 .header__mobile--mobile--list {
-  margin: 32px 0 0 32px;
+  margin: 42px 0 0 32px;
 }
 .header__mobile--mobile--list > li {
   margin: 20px 0;
 }
 .header__mobile--mobile--list a {
+  width: 100%;
   text-decoration: none;
+  position: relative;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -373,6 +373,14 @@ img {
 }
 .header__mobile--mobile--list a:hover {
   color: #0497d8;
+}
+.header__mobile--mobile--list a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  height: 22px;
+  width: 180px;
 }
 .header__mobile--close--img {
   width: 20px;

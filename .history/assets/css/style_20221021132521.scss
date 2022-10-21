@@ -112,6 +112,7 @@ img {
   }
   &__logo {
     width: 22%;
+    height: 58.5px;
     @include flex(center, flex-start);
     &--img {
       width: 37px;
@@ -246,10 +247,10 @@ img {
   }
   &__mobile {
     &--list {
-      display: none;
+      // display: none;
       // height: 56px;
-      width: 25%;
-
+      @include flex(center, flex-start);
+      width: 30%;
     }
     &--icon {
       margin-top: -10px;
@@ -267,15 +268,14 @@ img {
     }
     &--personal {
       @include flex(center, flex-end);
-      width: 25%;
-      display: none;
+      width: 30%;
       
     }
     &--user {
       width: 30.5px;
       height: 30.5px;
       object-fit: contain;
-      margin: 0px 19px;
+      padding: 0px 19px;
     }
     &--cart {
        padding: 21px 19px;
@@ -320,18 +320,9 @@ img {
       &--list a {
         width: 100%;
         text-decoration: none;
-        position: relative;
         @include text(16px, bold);
         &:hover {
           color: $cerulean;
-        }
-        &::after {
-          position: absolute;
-          content: "";
-          top: 0;
-          bottom: 0;
-          height: 22px;
-          width: 180px;
         }
       }
     }

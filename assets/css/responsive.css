@@ -6,7 +6,7 @@
     margin: 1.5px 12px 0.5px 13px;
   }
   .header__logo {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +38,15 @@
   .header__contact {
     display: none;
   }
+  .header__mobile--personal {
+    display: flex;
+  }
+  .header__mobile--list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 @media only screen and (max-width: 767px) {
   .nav__left {
@@ -62,8 +71,12 @@
     width: 50px;
     margin-left: 13px;
   }
-  .header__logo h1 {
+  .header__logo--img {
     display: none;
+  }
+  .header__logo h1 {
+    font-size: 1.2rem;
+    margin: 0 15px 0 0;
   }
 }
 
