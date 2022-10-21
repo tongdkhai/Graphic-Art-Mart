@@ -1,0 +1,93 @@
+$blue-color: #23499f;
+$gray-l-1: #f6f6f6;
+$text-color: #2a2a2a;
+$gray-m-1: #d9d9d9;
+$gray-d-1: #888888;
+$gray-d-3: #2a2a2a;
+$cerulean: #0497d8;
+
+// Tablet
+@media only screen and (max-width: 1024px) {
+  .Rectangle {
+    display: none;
+  }
+  .img {
+    &__search {
+      margin: 1.5px 12px 0.5px 13px;
+    }
+  }
+
+  .header {
+    &__logo {
+      width: 60%;
+      @include flex(center, center);
+      &--img {
+        width: 30.5px;
+      }
+    }
+    &__logo h1 {
+      font-size: 2rem;
+    }
+
+    &__menu {
+      display: none;
+    }
+    &__info {
+      background-color: #2a2a2a;
+      color: #fff;
+      height: 56px;
+    }
+
+    &__input,
+    &__button {
+      display: none;
+    }
+    &__delivery {
+      display: none;
+    }
+    &__search {
+      display: none;
+    }
+    &__contact {
+      display: none;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 767px) {
+  .nav {
+    &__left {
+      margin: 10px 20px;
+      &--text {
+        display: none;
+      }
+    }
+    &__list {
+      &--img {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+  }
+  .img {
+    &__home,
+    &__location {
+      margin: 0;
+    }
+    &__search {
+      margin: 0 8px;
+    }
+  }
+  .header {
+    &__search {
+      height: 40px;
+      width: 50px;
+      margin-left: 13px;
+    }
+    &__logo h1 {
+      display: none;
+    }
+  }
+}

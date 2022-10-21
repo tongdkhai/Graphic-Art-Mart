@@ -1,25 +1,30 @@
 @media only screen and (max-width: 1024px) {
-  .nav__right {
+  .Rectangle {
     display: none;
-  }
-  .nav__left {
-    margin: 12px 107px 10px 90px;
-  }
-  .nav__list {
-    display: flex;
   }
   .img__search {
     margin: 1.5px 12px 0.5px 13px;
   }
   .header__logo {
-    width: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
   }
   .header__logo--img {
-    width: 60px;
+    width: 30.5px;
   }
   .header__logo h1 {
-    font-size: 3rem;
+    font-size: 1.6rem;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__info {
+    background-color: #2a2a2a;
+    color: #fff;
+    height: 56px;
   }
   .header__input, .header__button {
     display: none;
@@ -28,13 +33,7 @@
     display: none;
   }
   .header__search {
-    padding: 0;
-    width: 60px;
-    border-radius: 40px;
-    margin: 24px 9.6px 25px 25px;
-  }
-  .header__search:hover {
-    background-color: #0497d8;
+    display: none;
   }
   .header__contact {
     display: none;
