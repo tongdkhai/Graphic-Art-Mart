@@ -29,6 +29,9 @@ $cerulean: #0497d8;
 @media only screen and (max-width: 1024px) {
   .Rectangle {
     display: none;
+    &__container {
+      justify-content: flex-start;
+    }
   }
   .img {
     &__search {
@@ -38,7 +41,7 @@ $cerulean: #0497d8;
 
   .header {
     &__logo {
-      width: 40%;
+      // width: 60%;
       @include flex(center, center);
       &--img {
         width: 30.5px;

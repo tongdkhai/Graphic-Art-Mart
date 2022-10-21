@@ -38,7 +38,7 @@ $cerulean: #0497d8;
 
   .header {
     &__logo {
-      width: 40%;
+      // width: 60%;
       @include flex(center, center);
       &--img {
         width: 30.5px;

@@ -249,7 +249,7 @@ img {
     &--list {
       // display: none;
       // height: 56px;
-      @include flex(center, flex-start);
+      @include flex(center, center);
       width: 30%;
     }
     &--icon {

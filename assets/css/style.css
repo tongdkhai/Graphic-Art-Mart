@@ -287,11 +287,11 @@ img {
   cursor: pointer;
 }
 .header__mobile--list {
-  height: 56px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
+  width: 30%;
 }
 .header__mobile--icon {
   margin-top: -10px;
@@ -303,6 +303,24 @@ img {
   margin: 6px 0 0;
   background-color: white;
   z-index: 1;
+}
+.header__mobile--search {
+  padding: 19px;
+}
+.header__mobile--personal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 30%;
+}
+.header__mobile--user {
+  width: 30.5px;
+  height: 30.5px;
+  object-fit: contain;
+}
+.header__mobile--cart {
+  padding: 21px 19px;
 }
 .header__mobile--checkbox {
   display: none;

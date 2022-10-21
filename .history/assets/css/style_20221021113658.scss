@@ -248,9 +248,8 @@ img {
   &__mobile {
     &--list {
       // display: none;
-      // height: 56px;
-      @include flex(center, flex-start);
-      width: 30%;
+      height: 56px;
+      @include flex(center, center);
     }
     &--icon {
       margin-top: -10px;
@@ -266,19 +265,9 @@ img {
     &--search {
       padding: 19px;
     }
-    &--personal {
-      @include flex(center, flex-end);
-      width: 30%;
-      
-    }
     &--user {
-      width: 30.5px;
-      height: 30.5px;
-      object-fit: contain;
-      // padding: 21px 19px;
-    }
-    &--cart {
-       padding: 21px 19px;
+      width: 56px;
+      height: 56px;
     }
     &--checkbox {
       display: none;  

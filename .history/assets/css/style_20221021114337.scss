@@ -248,9 +248,8 @@ img {
   &__mobile {
     &--list {
       // display: none;
-      // height: 56px;
-      @include flex(center, flex-start);
-      width: 30%;
+      height: 56px;
+      @include flex(center, center);
     }
     &--icon {
       margin-top: -10px;
