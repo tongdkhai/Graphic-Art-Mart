@@ -32,8 +32,6 @@ img {
 
 body {
   font-family: ProximaNova;
-  padding: 0;
-  margin: 0;
 }
 
 ul {
@@ -112,7 +110,7 @@ a {
     width: 22%;
     @include flex(center, flex-start);
     &--img {
-      width: 274px;
+      width: 37px;
       height: 58.5px;
       object-fit: contain;
     }
@@ -137,9 +135,10 @@ a {
     outline: none;
     background-color: transparent;
     font-size: 14px;
-    font-family: ProximaNova;
+    // font-family: ProximaNova;
     flex-grow: 1;
     margin-right: 190px;
+    min-width: 220px;
   }
   &__button {
     background-color: $blue-color;
@@ -148,17 +147,16 @@ a {
     outline: none;
     font-size: 16px;
     font-weight: bold;
-    font-family: ProximaNova;
+    // font-family: ProximaNova;
     height: 48px;
     // margin-left: 224px;
     padding: 13px 29px 16px 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    width: 104px;
   }
   &__delivery {
     @include flex(center, flex-start);
-    width: 200px;
+    width: 20%;
     height: 48px;
     &--item {
       @include text(14px, bold, #505050);
@@ -172,8 +170,7 @@ a {
     }
   }
   &__contact {
-    width: 200px;
-    height: 48px;
+    width: 20%;
     @include flex(center, flex-end);
     &--phone-number {
       height: 37px;
@@ -433,6 +430,7 @@ a {
 
 .img {
   &__location {
+    width: 13.9px;
     margin: 1px 8px 1px 0;
     object-fit: contain;
   }

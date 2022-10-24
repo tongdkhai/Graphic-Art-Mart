@@ -2,11 +2,6 @@
   font-family: ProximaNoVa;
   src: url(./assets/fonts/ProximaNova_Regular.otf);
 }
-@font-face {
-  font-family: ProximaNova;
-  src: url(./assets/fonts/ProximaNova_Bold.otf);
-  font-weight: bold;
-}
 .app {
   max-width: 1920px;
   margin: 0 auto;
@@ -27,6 +22,8 @@ img {
 
 body {
   font-family: ProximaNova;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -103,7 +100,7 @@ a {
   flex-wrap: nowrap;
 }
 .header__logo--img {
-  width: 37px;
+  width: 274px;
   height: 58.5px;
   object-fit: contain;
 }
@@ -130,9 +127,9 @@ a {
   outline: none;
   background-color: transparent;
   font-size: 14px;
+  font-family: ProximaNova;
   flex-grow: 1;
   margin-right: 190px;
-  min-width: 220px;
 }
 .header__button {
   background-color: #23499f;
@@ -141,17 +138,19 @@ a {
   outline: none;
   font-size: 16px;
   font-weight: bold;
+  font-family: ProximaNova;
   height: 48px;
   padding: 13px 29px 16px 20px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  width: 104px;
 }
 .header__delivery {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  width: 20%;
+  width: 200px;
   height: 48px;
 }
 .header__delivery--item {
@@ -176,7 +175,8 @@ a {
   margin-top: 1px;
 }
 .header__contact {
-  width: 20%;
+  width: 200px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -522,7 +522,6 @@ a {
 }
 
 .img__location {
-  width: 13.9px;
   margin: 1px 8px 1px 0;
   object-fit: contain;
 }
