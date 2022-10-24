@@ -74,9 +74,8 @@ a {
   @include flex(center, space-between);
   &__left {
     @include flex(flex-start, flex-start);
-    margin: 11px 0px 12px 0;
+    margin: 11px 130px 12px 0;
     &--item {
-      width: 291px;
       margin-right: 40px;
       @include flex(center, flex-start);
     }
@@ -91,9 +90,8 @@ a {
     }
   }
   &__right {
-    width: calc(100% - 291px - 291px - 80px);
     &--list {
-      @include flex(flex-start,flex-end);
+      @include flex();
     }
     &--list a {
       @include text(16px, bold);
@@ -123,7 +121,6 @@ a {
     height: 48px;
     margin: 24px 60.6px 25px 26px;
     @include flex(center);
-    
   }
   &__input {
     outline: none;
@@ -138,9 +135,6 @@ a {
     width: 100%;
     z-index: 1;
     position: relative;
-    &:focus {
-      border-color: $cerulean;
-    }
   }
   &__button {
     background-color: $blue-color;
@@ -161,13 +155,12 @@ a {
     z-index: 2;
   }
   &__delivery {
-    @include flex(center);
+    @include flex(center, flex-start);
     width: 200px;
     height: 48px;
-    margin-right: 80.8px;
     &--item {
       @include text(14px, bold, #505050);
-      // @include flex(flex-start, space-between, wrap);
+      @include flex(flex-start, space-between, wrap);
       margin-left: 8px;
     }
     &--time {
@@ -179,12 +172,12 @@ a {
   &__contact {
     width: 200px;
     height: 48px;
-    @include flex(center);
+    @include flex(center, flex-end);
     &--phone-number {
       height: 37px;
       width: 166px;
       margin: 10px 8px 0 2.8px;
-      @include text(26px, normal);
+      @include text(28px, normal);
     }
   }
   &__menu {
@@ -394,7 +387,7 @@ a {
   // font-family: ProximaNova;
   @include text(14px, normal);
   &__container {
-    @include flex(center, space-between);
+    @include flex(center);
   }
 
   // &__phone {
@@ -458,8 +451,9 @@ a {
     margin-top: 8px;
   }
   &__truck {
-    width: 87.5px;
-    // margin: 2.5px 17px 5.5px 0px;
+    width: 62.5px;
+    height: 35px;
+    margin: 2.5px 17px 5.5px 0px;
   }
 }
 

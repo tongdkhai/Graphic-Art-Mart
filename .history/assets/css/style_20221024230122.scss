@@ -93,7 +93,7 @@ a {
   &__right {
     width: calc(100% - 291px - 291px - 80px);
     &--list {
-      @include flex(flex-start,flex-end);
+      @include flex(,flex-end);
     }
     &--list a {
       @include text(16px, bold);

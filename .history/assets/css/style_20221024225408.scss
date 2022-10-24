@@ -75,8 +75,8 @@ a {
   &__left {
     @include flex(flex-start, flex-start);
     margin: 11px 0px 12px 0;
+    width: 50%;
     &--item {
-      width: 291px;
       margin-right: 40px;
       @include flex(center, flex-start);
     }
@@ -91,9 +91,9 @@ a {
     }
   }
   &__right {
-    width: calc(100% - 291px - 291px - 80px);
     &--list {
-      @include flex(flex-start,flex-end);
+      @include flex();
+      width: calc(100% - 50%);
     }
     &--list a {
       @include text(16px, bold);
@@ -394,7 +394,7 @@ a {
   // font-family: ProximaNova;
   @include text(14px, normal);
   &__container {
-    @include flex(center, space-between);
+    @include flex(center);
   }
 
   // &__phone {
