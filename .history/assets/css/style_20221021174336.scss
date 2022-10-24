@@ -17,6 +17,9 @@ $cerulean: #0497d8;
   font-weight: bold;
 }
 
+.html {
+  font-size: 62.5%;
+}
 .app {
   max-width: 1920px;
   margin: 0 auto;
@@ -35,16 +38,12 @@ img {
   max-width: 100%;
 }
 
-body {
-  font-family: ProximaNova;
-}
-
-ul {
+.ul {
   list-style: none;
   padding-left: 0;
 }
 
-a {
+.a {
   text-decoration: none;
 }
 
@@ -70,7 +69,7 @@ a {
   letter-spacing: normal;
   text-align: left;
   color: $text-color;
-  font-family: ProximaNova;
+  // font-family: ProximaNova;
 }
 
 .nav {
@@ -358,30 +357,11 @@ a {
 // Title
 .title {
   max-width: 1440px;
-  margin-left: 35px;
-  padding-top: 7px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 24px;
   &--text {
-    width: 100%;
-    margin: 57px 26px 18px 0;
-    @include text(41px, bold);
+
   }
-}
-// Banner
-.banner {
-   @include flex(center, center);
-    flex-direction: row;
-    width: 100%;
-    gap: 56px;
-    @include text(26px, bold);
-    border-bottom: 1px solid $blue-color;
-    margin-bottom: 35px;
-    margin-left: 29px;
-    &--item {
-      padding-bottom: 10px;
-      margin: 0 0 0 0;
-    }
 }
 
 .Rectangle {
@@ -430,6 +410,35 @@ a {
   &-161120 {
     width: 100%;
     height: 200px;
+  }
+}
+
+.Product {
+  &-Selection-Tool {
+    @include flex(center, center);
+    flex-direction: row;
+    width: 100%;
+    gap: 56px;
+    // margin: 18px 95px 3px 115px;
+    // font-family: ProximaNova;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    border-bottom: 1px solid $blue-color;
+    margin-bottom: 35px;
+  }
+  &-Applications {
+    padding-bottom: 10px;
+  }
+  &-Questions {
+    padding-bottom: 10px;
+  }
+  &-Recommended-Products {
+    padding-bottom: 10px;
   }
 }
 
@@ -514,8 +523,6 @@ a {
   }
 }
 
-
-// Color
 .cerulean {
   background-color: $cerulean;
 }

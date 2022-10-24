@@ -1,17 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="20.414" height="20.414" viewBox="0 0 20.414 20.414">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #2a2a2a;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 2px;
-      }
-    </style>
-  </defs>
-  <g id="search" transform="translate(-2 -2)">
-    <circle id="Ellipse_153" data-name="Ellipse 153" class="cls-1" cx="8" cy="8" r="8" transform="translate(3 3)"/>
-    <line id="Line_547" data-name="Line 547" class="cls-1" x1="4.35" y1="4.35" transform="translate(16.65 16.65)"/>
-  </g>
+    <g transform="translate(-2 -2)">
+        <circle data-name="Ellipse 153" cx="8" cy="8" r="8" transform="translate(3 3)" style="fill:none;stroke:#2a2a2a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        <path data-name="Line 547" transform="translate(16.65 16.65)" style="fill:none;stroke:#2a2a2a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" d="M4.35 4.35 0 0"/>
+    </g>
 </svg>

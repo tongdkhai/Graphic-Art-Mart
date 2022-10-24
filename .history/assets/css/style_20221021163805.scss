@@ -17,6 +17,9 @@ $cerulean: #0497d8;
   font-weight: bold;
 }
 
+.html {
+  font-size: 62.5%;
+}
 .app {
   max-width: 1920px;
   margin: 0 auto;
@@ -35,16 +38,12 @@ img {
   max-width: 100%;
 }
 
-body {
-  font-family: ProximaNova;
-}
-
-ul {
+.ul {
   list-style: none;
   padding-left: 0;
 }
 
-a {
+.a {
   text-decoration: none;
 }
 
@@ -70,7 +69,7 @@ a {
   letter-spacing: normal;
   text-align: left;
   color: $text-color;
-  font-family: ProximaNova;
+  // font-family: ProximaNova;
 }
 
 .nav {
@@ -248,37 +247,39 @@ a {
   &__mobile {
     &--list {
       display: none;
-      width: 15%;
+      // width: 15%;
+
     }
     &--icon {
-      padding: 5px 20px;
-      margin-top: 2px;
+      margin-top: -10px;
+      padding: 28px 24px;
     }
     &--line {
-      width: 20px;
+      width: 23px;
       height: 2px;
-      margin: 5px 0 0;
+      margin: 6px 0 0;
       background-color: white;
     }
     &--search {
-      padding: 25px 7px 18px 18px;
+      padding: 11px 19px 19px 19px;
     }
     &--personal {
       @include flex(center, flex-end);
       width: 15%;
       display: none;
+      
     }
     &--user {
       width: 30.5px;
       height: 30.5px;
       object-fit: contain;
-      margin: 7px 31px 0px 0px;
+      margin: 0px 19px;
     }
     &--cart {
-      margin: 9px 16px 0 0;
+       padding: 21px 19px;
     }
     &--checkbox {
-      display: none;
+      display: none;  
       &:checked ~ .header__mobile--overlay {
         display: block;
       }
@@ -344,46 +345,6 @@ a {
   }
 }
 
-// Body
-.home {
-  margin: 22px 0 57px 8px;
-  &__category {
-    @include text(12px, normal, $gray-d-1);
-  }
-  &--space {
-    color: transparent;
-  }
-}
-
-// Title
-.title {
-  max-width: 1440px;
-  margin-left: 35px;
-  padding-top: 7px;
-  text-align: center;
-  margin-bottom: 24px;
-  &--text {
-    width: 100%;
-    margin: 57px 26px 18px 0;
-    @include text(41px, bold);
-  }
-}
-// Banner
-.banner {
-   @include flex(center, center);
-    flex-direction: row;
-    width: 100%;
-    gap: 56px;
-    @include text(26px, bold);
-    border-bottom: 1px solid $blue-color;
-    margin-bottom: 35px;
-    margin-left: 29px;
-    &--item {
-      padding-bottom: 10px;
-      margin: 0 0 0 0;
-    }
-}
-
 .Rectangle {
   background-color: $gray-l-1;
   // width: 1920px;
@@ -433,6 +394,79 @@ a {
   }
 }
 
+.Path {
+  &__img {
+    width: 62.5px;
+    height: 35px;
+    margin: 2.5px 17px 5.5px 0px;
+  }
+}
+
+.Home {
+  &-Breadcrumbs {
+    margin: 25px 0 57px 0;
+  }
+  &-Category {
+    // font-family: ProximaNova;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $gray-d-1;
+  }
+  &-Contact {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.Contact-Us {
+  width: 100%;
+  margin: 57px 26px 18px 0;
+  // font-family: ProximaNova;
+  font-size: 42px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  color: $gray-d-3;
+  margin-bottom: 18px;
+}
+
+.Product {
+  &-Selection-Tool {
+    @include flex(center, center);
+    flex-direction: row;
+    width: 100%;
+    gap: 56px;
+    // margin: 18px 95px 3px 115px;
+    // font-family: ProximaNova;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    border-bottom: 1px solid $blue-color;
+    margin-bottom: 35px;
+  }
+  &-Applications {
+    padding-bottom: 10px;
+  }
+  &-Questions {
+    padding-bottom: 10px;
+  }
+  &-Recommended-Products {
+    padding-bottom: 10px;
+  }
+}
+
 .img {
   &__location {
     width: 13.9px;
@@ -449,11 +483,6 @@ a {
   }
   &__phone {
     margin-top: 8px;
-  }
-  &__truck {
-    width: 62.5px;
-    height: 35px;
-    margin: 2.5px 17px 5.5px 0px;
   }
 }
 
@@ -514,8 +543,6 @@ a {
   }
 }
 
-
-// Color
 .cerulean {
   background-color: $cerulean;
 }
