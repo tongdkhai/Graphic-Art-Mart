@@ -56,7 +56,7 @@ a {
 }
 .nav__left--item {
   width: 291px;
-  margin-right: 40px;
+  margin-right: 37px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -88,7 +88,7 @@ a {
   margin-left: 9px;
 }
 .nav__right {
-  width: calc(100% - 291px - 291px - 80px);
+  width: calc(100% - 291px - 291px - 74px);
 }
 .nav__right--list {
   display: flex;
@@ -106,7 +106,7 @@ a {
   text-align: left;
   color: #2a2a2a;
   font-family: ProximaNova;
-  margin-left: 46px;
+  margin-left: 48px;
 }
 .nav__right--list a:hover {
   color: #0497d8;
@@ -124,7 +124,7 @@ a {
   position: relative;
   width: calc(100% - 274px - 200px - 200px - 26px - 4.13%);
   height: 48px;
-  margin: 24px 60.6px 25px 26px;
+  margin: 24px 79.6px 25px 52px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -202,8 +202,8 @@ a {
 .header__contact--phone-number {
   height: 37px;
   width: 166px;
-  margin: 10px 8px 0 2.8px;
-  font-size: 26px;
+  margin: 10px 9px 4px 0.8px;
+  font-size: 27px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

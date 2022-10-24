@@ -121,7 +121,7 @@ a {
     position: relative;
     width: calc(100% - 274px - 200px - 200px - 26px - 4.13%);
     height: 48px;
-    margin: 24px 79.6px 25px 52px;
+    margin: 24px 60.6px 25px 26px;
     @include flex(center);
     
   }
@@ -183,8 +183,8 @@ a {
     &--phone-number {
       height: 37px;
       width: 166px;
-      margin: 10px 9px 4px 0.8px;
-      @include text(27px, normal);
+      margin: 10px 8px 0 2.8px;
+      @include text(26px, normal);
     }
   }
   &__menu {

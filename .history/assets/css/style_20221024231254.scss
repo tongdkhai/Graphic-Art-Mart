@@ -183,8 +183,8 @@ a {
     &--phone-number {
       height: 37px;
       width: 166px;
-      margin: 10px 9px 4px 0.8px;
-      @include text(27px, normal);
+      margin: 10px 8px 0 2.8px;
+      @include text(26px, normal);
     }
   }
   &__menu {
