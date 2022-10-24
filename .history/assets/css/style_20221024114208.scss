@@ -175,7 +175,6 @@ a {
     @include flex(center, flex-end);
     &--phone-number {
       height: 37px;
-      width: 166px;
       margin: 10px 8px 0 2.8px;
       @include text(28px, normal);
     }
@@ -390,13 +389,13 @@ a {
     @include flex(center);
   }
 
-  // &__phone {
-  //   width: 24.4px;
-  //   height: 24.5px;
-  //   margin: 9.5px 5.8px 3px 0;
-  //   object-fit: contain;
-  //   border: solid 2px $gray-d-3;
-  // }
+  &__phone {
+    width: 24.4px;
+    height: 24.5px;
+    margin: 9.5px 5.8px 3px 0;
+    object-fit: contain;
+    border: solid 2px $gray-d-3;
+  }
   &__container-4 {
     @include flex(center, space-between);
   }

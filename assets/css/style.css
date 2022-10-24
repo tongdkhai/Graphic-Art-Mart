@@ -61,9 +61,29 @@ a {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
+.nav__left--text {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2a2a2a;
+  font-family: ProximaNova;
+  line-height: 18px;
+}
 .nav__left--title {
-  color: #23499f;
+  font-size: 14px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #23499f;
+  font-family: ProximaNova;
   margin-left: 6px;
 }
 .nav__right--list {
@@ -73,7 +93,6 @@ a {
   flex-wrap: nowrap;
 }
 .nav__right--list a {
-  text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -102,24 +121,24 @@ a {
   width: 40%;
   height: 48px;
   margin: 24px 60.6px 25px 26px;
-  padding: 0px 105px 0 16px;
-  border-radius: 10px;
-  border: solid 2px #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
 .header__input {
-  border: 0;
   outline: none;
   background-color: transparent;
   font-size: 18px;
   font-family: ProximaNova;
+  border-radius: 10px;
+  border: solid 2px #d9d9d9;
   flex-grow: 1;
   height: 48px;
   padding-left: 33px;
   width: 100%;
+  z-index: 1;
+  position: relative;
 }
 .header__button {
   background-color: #23499f;
@@ -136,6 +155,8 @@ a {
   width: 104px;
   position: absolute;
   right: 0;
+  top: 0;
+  z-index: 2;
 }
 .header__delivery {
   display: flex;
@@ -176,6 +197,7 @@ a {
 }
 .header__contact--phone-number {
   height: 37px;
+  width: 166px;
   margin: 10px 8px 0 2.8px;
   font-size: 28px;
   font-weight: normal;
@@ -469,15 +491,8 @@ a {
 .Rectangle__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
-}
-.Rectangle__phone {
-  width: 24.4px;
-  height: 24.5px;
-  margin: 9.5px 5.8px 3px 0;
-  object-fit: contain;
-  border: solid 2px #2a2a2a;
 }
 .Rectangle__container-4 {
   display: flex;
@@ -527,6 +542,8 @@ a {
   height: 18px;
   margin: 1.5px 12px 0.5px 0;
   object-fit: contain;
+  z-index: 2;
+  left: 16px;
 }
 .img__phone {
   margin-top: 8px;

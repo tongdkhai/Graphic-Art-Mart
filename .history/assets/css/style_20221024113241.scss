@@ -120,6 +120,7 @@ a {
     width: calc(40%);
     height: 48px;
     margin: 24px 60.6px 25px 26px;
+    padding: 0px 105px 0 16px;
     @include flex(center);
   }
   &__input {
@@ -175,7 +176,7 @@ a {
     @include flex(center, flex-end);
     &--phone-number {
       height: 37px;
-      width: 166px;
+      // font-family: ProximaNova;
       margin: 10px 8px 0 2.8px;
       @include text(28px, normal);
     }
@@ -387,16 +388,16 @@ a {
   // font-family: ProximaNova;
   @include text(14px, normal);
   &__container {
-    @include flex(center);
+    @include flex(center, space-between);
   }
 
-  // &__phone {
-  //   width: 24.4px;
-  //   height: 24.5px;
-  //   margin: 9.5px 5.8px 3px 0;
-  //   object-fit: contain;
-  //   border: solid 2px $gray-d-3;
-  // }
+  &__phone {
+    width: 24.4px;
+    height: 24.5px;
+    margin: 9.5px 5.8px 3px 0;
+    object-fit: contain;
+    border: solid 2px $gray-d-3;
+  }
   &__container-4 {
     @include flex(center, space-between);
   }
@@ -445,7 +446,6 @@ a {
     margin: 1.5px 12px 0.5px 0;
     object-fit: contain;
     z-index: 2;
-    left: 16px;
   }
   &__phone {
     margin-top: 8px;

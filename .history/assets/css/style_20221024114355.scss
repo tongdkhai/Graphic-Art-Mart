@@ -175,7 +175,6 @@ a {
     @include flex(center, flex-end);
     &--phone-number {
       height: 37px;
-      width: 166px;
       margin: 10px 8px 0 2.8px;
       @include text(28px, normal);
     }

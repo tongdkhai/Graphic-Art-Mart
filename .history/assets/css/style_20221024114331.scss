@@ -175,7 +175,6 @@ a {
     @include flex(center, flex-end);
     &--phone-number {
       height: 37px;
-      width: 166px;
       margin: 10px 8px 0 2.8px;
       @include text(28px, normal);
     }
@@ -397,15 +396,15 @@ a {
   //   object-fit: contain;
   //   border: solid 2px $gray-d-3;
   // }
-  &__container-4 {
-    @include flex(center, space-between);
-  }
-  &__login {
-    @include flex(center, flex-start);
-    &:hover {
-      cursor: pointer;
-    }
-  }
+  // &__container-4 {
+  //   @include flex(center, space-between);
+  // }
+  // &__login {
+  //   @include flex(center, flex-start);
+  //   &:hover {
+  //     cursor: pointer;
+  //   }
+  // }
 
   &-161538 {
     width: 100%;
