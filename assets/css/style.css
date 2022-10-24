@@ -92,29 +92,17 @@ a {
 .header__info {
   background-color: #fff;
 }
-.header__logo {
-  width: 22%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
 .header__logo--img {
   width: 274px;
   height: 58.5px;
   object-fit: contain;
 }
-.header__logo h1 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  margin-left: 9px;
-  padding-bottom: 2px;
-}
 .header__search {
+  position: relative;
   width: 40%;
   height: 48px;
-  margin: 24px 60.6px 25px 25px;
-  padding: 14.5px 276px 13.5px 16px;
+  margin: 24px 60.6px 25px 26px;
+  padding: 0px 105px 0 16px;
   border-radius: 10px;
   border: solid 2px #d9d9d9;
   display: flex;
@@ -126,10 +114,12 @@ a {
   border: 0;
   outline: none;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 18px;
   font-family: ProximaNova;
   flex-grow: 1;
-  margin-right: 190px;
+  height: 48px;
+  padding-left: 33px;
+  width: 100%;
 }
 .header__button {
   background-color: #23499f;
@@ -139,11 +129,13 @@ a {
   font-size: 16px;
   font-weight: bold;
   font-family: ProximaNova;
-  height: 48px;
+  height: 47px;
   padding: 13px 29px 16px 20px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   width: 104px;
+  position: absolute;
+  right: 0;
 }
 .header__delivery {
   display: flex;
@@ -530,6 +522,9 @@ a {
   margin-right: 8px;
 }
 .img__search {
+  position: absolute;
+  width: 18px;
+  height: 18px;
   margin: 1.5px 12px 0.5px 0;
   object-fit: contain;
 }

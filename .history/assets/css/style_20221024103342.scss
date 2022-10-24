@@ -120,7 +120,7 @@ a {
     width: calc(40%);
     height: 48px;
     margin: 24px 60.6px 25px 26px;
-    padding: 0px 105px 0 16px;
+    padding: 14.5px 276px 13.5px 16px;
     border-radius: 10px;
     border: solid 2px $gray-m-1;
     @include flex(center);
@@ -129,11 +129,11 @@ a {
     border: 0;
     outline: none;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 14px;
     font-family: ProximaNova;
     flex-grow: 1;
     height: 48px;
-    padding-left: 33px;
+    padding: 0 104px 0 20px;
     width: 100%;
   }
   &__button {
@@ -150,7 +150,7 @@ a {
     border-top-right-radius: 10px;
     width: 104px;
     position: absolute;
-    right: 0;
+    right: 0;  
   }
   &__delivery {
     @include flex(center, flex-start);
@@ -364,18 +364,18 @@ a {
 }
 // Banner
 .banner {
-  @include flex(center, center);
-  flex-direction: row;
-  width: 100%;
-  gap: 56px;
-  @include text(26px, bold);
-  border-bottom: 1px solid $blue-color;
-  margin-bottom: 35px;
-  margin-left: 29px;
-  &--item {
-    padding-bottom: 10px;
-    margin: 0 0 0 0;
-  }
+   @include flex(center, center);
+    flex-direction: row;
+    width: 100%;
+    gap: 56px;
+    @include text(26px, bold);
+    border-bottom: 1px solid $blue-color;
+    margin-bottom: 35px;
+    margin-left: 29px;
+    &--item {
+      padding-bottom: 10px;
+      margin: 0 0 0 0;
+    }
 }
 
 .Rectangle {
@@ -438,8 +438,7 @@ a {
   }
   &__search {
     position: absolute;
-    width: 18px;
-    height: 18px;
+    left: 0;
     margin: 1.5px 12px 0.5px 0;
     object-fit: contain;
   }
@@ -509,6 +508,7 @@ a {
     }
   }
 }
+
 
 // Color
 .cerulean {
