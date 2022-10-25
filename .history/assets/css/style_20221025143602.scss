@@ -87,7 +87,6 @@ a {
       margin-left: 7px;
       @include text(14px, normal);
       line-height: 18px;
-      margin-top: 3px
     }
     &--title {
       @include text(14px, bold, $blue-color);
@@ -98,9 +97,6 @@ a {
     width: calc(100% - 291px - 291px - 74px);
     &--list {
       @include flex(flex-start, flex-end);
-    }
-    &--list li {
-      margin: 0px -3px 3px 0px;
     }
     &--list a {
       @include text(16px, bold);
@@ -128,19 +124,19 @@ a {
     position: relative;
     width: calc(100% - 274px - 420px - 26px - 4.13%);
     height: 48px;
-    margin: 21px 57.6px 27px 49px;
+    margin: 24px 79.6px 25px 52px;
     @include flex(center);
   }
   &__input {
     outline: none;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 18px;
     font-family: ProximaNova;
     border-radius: 10px;
     border: solid 2px $gray-m-1;
     flex-grow: 1;
     height: 48px;
-    padding-left: 46px;
+    padding-left: 42px;
     width: 100%;
     z-index: 1;
     position: relative;
@@ -204,7 +200,7 @@ a {
       color: #fff;
     }
     &--list > li {
-      padding: 12px 40px 15px 39px;
+      padding: 16px 35px 15px 39px;
       :hover {
         color: $cerulean;
       }
@@ -219,11 +215,11 @@ a {
     }
     &--home {
       @include text(14px, bold, white);
-      margin-left: 9px;
+      margin-left: 8px;
     }
   }
   &__login {
-    padding: 10px 24px 16px 33px;
+    padding: 15px 20px 16px 33px;
     @include flex(center);
     color: #fff;
     &:hover {
@@ -420,7 +416,7 @@ a {
 
 // Body
 .home {
-  margin: 20px 0 57px 8px;
+  margin: 22px 0 57px 8px;
   &__category {
     @include text(12px, normal, $gray-d-1);
   }
@@ -438,8 +434,8 @@ a {
   margin-bottom: 24px;
   &--text {
     width: 100%;
-    margin: 57px 2px 18px 0;
-    @include text(43.5px, bold);
+    margin: 57px 26px 18px 0;
+    @include text(44px, bold);
   }
 }
 // Banner
@@ -494,14 +490,11 @@ a {
   &--item {
     width: 25%;
     height: 280px;
-    // margin: 42px 24px 14px 0;
+    margin: 42px 24px 14px 0;
     padding: 13px 12px 20px 12px;
     &-background {
       width: 100%;
       height: 200px;
-      @include flex(center, center);
-    }
-    &-img {
     }
   }
   &--heading {
@@ -550,7 +543,7 @@ a {
     position: absolute;
     width: 18px;
     height: 18px;
-    margin: 1.5px 12px 5.5px -4px;
+    margin: 1.5px 12px 0.5px 0;
     object-fit: contain;
     z-index: 2;
     left: 16px;
