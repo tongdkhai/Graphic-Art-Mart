@@ -274,9 +274,9 @@ a {
         left: 0;
         bottom: 0;
         width: 100%;
-        display: none;
-        transform: translateY(-800%);
-        transition: transform linear 0.3s;
+        // display: none;
+        transform: translateY(100%);
+        transition: transform linear 1s;
       }
       &-button {
         background-color: $blue-color;

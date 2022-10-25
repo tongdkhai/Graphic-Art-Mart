@@ -2,14 +2,8 @@
   .Rectangle {
     display: none;
   }
-  .img__search {
-    margin: 1.5px 12px 0.5px 13px;
-  }
   .header__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+    margin: 8.6px 0 11.9px 0;
   }
   .header__menu {
     display: none;
@@ -17,10 +11,7 @@
   .header__info {
     background-color: #2a2a2a;
     color: #fff;
-    height: 66px;
-  }
-  .header__input, .header__button {
-    display: none;
+    height: 75.4px;
   }
   .header__delivery {
     display: none;
@@ -33,43 +24,15 @@
   }
   .header__mobile--personal {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
   }
   .header__mobile--list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .nav__left {
-    margin: 10px 20px;
-  }
-  .nav__left--text {
-    display: none;
-  }
-  .nav__list--img {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-  .img__home, .img__location {
-    margin: 0;
-  }
-  .img__search {
-    margin: 0 8px;
-  }
-  .header__search {
-    height: 40px;
-    width: 50px;
-    margin-left: 13px;
-  }
-  .header__logo--img {
-    display: none;
-  }
-  .header__logo h1 {
-    font-size: 15px;
-    margin: 0px 18px -12px 52px;
   }
 }
 

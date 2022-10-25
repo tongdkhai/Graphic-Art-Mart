@@ -30,9 +30,15 @@ $cerulean: #0497d8;
   .Rectangle {
     display: none;
   }
+  .img {
+    &__search {
+      margin: 1.5px 12px 0.5px 13px;
+    }
+  }
+
   .header {
     &__logo {
-      margin: 8.6px 0 11.9px 0;
+      @include flex(center, center);
     }
 
     &__menu {
@@ -41,7 +47,12 @@ $cerulean: #0497d8;
     &__info {
       background-color: #2a2a2a;
       color: #fff;
-      height: 75.4px;
+      height: 66px;
+    }
+
+    &__input,
+    &__button {
+      display: none;
     }
     &__delivery {
       display: none;
@@ -54,10 +65,10 @@ $cerulean: #0497d8;
     }
     &__mobile {
       &--personal {
-        @include flex(center);
+        display: flex;
       }
       &--list {
-        @include flex(center);
+        @include flex(center, flex-start);
       }
     }
   }
@@ -65,13 +76,35 @@ $cerulean: #0497d8;
 
 // Mobile
 @media only screen and (max-width: 767px) {
-  // .header {
-  //   &__mobile {
-  //     &--search {
-  //       &-input {
-  //         width: 400px;
-  //       }
-  //     }
-  //   }
-  // }
+  .nav {
+    &__left {
+      margin: 10px 20px;
+      &--text {
+        display: none;
+      }
+    }
+    &__list {
+      &--img {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+  }
+  .img {
+    &__home,
+    &__location {
+      margin: 0;
+    }
+    &__search {
+      margin: 0 8px;
+    }
+  }
+  .header {
+    &__search {
+      height: 40px;
+      width: 50px;
+      margin-left: 13px;
+    }
+  }
 }

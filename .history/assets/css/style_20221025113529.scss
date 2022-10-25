@@ -253,7 +253,7 @@ a {
     &--list {
       margin-bottom: 10px;
       display: none;
-      // position: relative;
+      position: relative;
     }
     &--icon {
       padding: 5px 20px;
@@ -267,16 +267,15 @@ a {
     }
     &--search {
       // padding: 25px 7px 18px 18px;
-      margin: 10px 12px 0 0;
+      margin: 7px 12px 0 0;
       &-input {
+        width: 100px;
         position: absolute;
-        top: 75px;
+        top: 56px;
         left: 0;
-        bottom: 0;
         width: 100%;
+        bottom: 0;
         display: none;
-        transform: translateY(-800%);
-        transition: transform linear 0.3s;
       }
       &-button {
         background-color: $blue-color;
@@ -301,7 +300,6 @@ a {
         display: none;
         &:checked ~ .header__mobile--search-input {
           display: block;
-          transform: translateY(0%);
         }
       }
       &-close {
@@ -375,8 +373,8 @@ a {
       position: absolute;
       top: 0;
       left: 0;
-      width: 400px;
-      height: 1000px;
+      bottom: 0;
+      width: 300px;
       max-width: 100%;
       background-color: #fff;
       transform: translateX(-100%);
@@ -467,7 +465,6 @@ a {
   @include text(14px, normal);
   &__container {
     @include flex(center, space-between);
-    position: relative;
   }
 
   // &__phone {

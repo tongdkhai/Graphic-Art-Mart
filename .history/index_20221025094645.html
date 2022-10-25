@@ -132,7 +132,42 @@
                 <div class="header__mobile--line"></div>
                 <div class="header__mobile--line"></div>
               </label>
-              <!-- Header mobile menu bars -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20.414"
+                height="20.414"
+                viewBox="0 0 20.414 20.414"
+              >
+                <g transform="translate(-2 -2)">
+                  <circle
+                    data-name="Ellipse 153"
+                    cx="8"
+                    cy="8"
+                    r="8"
+                    transform="translate(3 3)"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  />
+                  <path
+                    data-name="Line 547"
+                    transform="translate(16.65 16.65)"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                    d="M4.35 4.35 0 0"
+                  />
+                </g>
+              </svg>
+
               <input
                 type="checkbox"
                 id="header__mobile--checkbox"
@@ -168,70 +203,6 @@
                   </li>
                 </ul>
               </div>
-
-              <!-- Header mobile search -->
-              <label for="header__mobile--search-checkbox">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.414"
-                  height="20.414"
-                  viewBox="0 0 20.414 20.414"
-                  class="header__mobile--search"
-                >
-                  <g transform="translate(-2 -2)">
-                    <circle
-                      data-name="Ellipse 153"
-                      cx="8"
-                      cy="8"
-                      r="8"
-                      transform="translate(3 3)"
-                      style="
-                        fill: none;
-                        stroke: #fff;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-width: 2px;
-                      "
-                    />
-                    <path
-                      data-name="Line 547"
-                      transform="translate(16.65 16.65)"
-                      style="
-                        fill: none;
-                        stroke: #fff;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-width: 2px;
-                      "
-                      d="M4.35 4.35 0 0"
-                    />
-                  </g>
-                </svg>
-              </label>
-
-              <input
-                type="checkbox"
-                id="header__mobile--search-checkbox"
-                class="header__mobile--search-checkbox"
-              />
-
-               <div class="header__mobile--search-input">
-                <label for="header__mobile--search-checkbox">
-                  <img
-                    src="./assets/img/close.png"
-                    alt="Close"
-                    class="header__mobile--search-close"
-                  />
-                </label>
-
-                <input
-                  type="text"
-                  class="header__mobile--input"
-                  placeholder="What can we help you find today?"
-                />
-                <button class="header__mobile--search-button">Search</button>
-              </div>
-             
             </div>
             <div class="header__logo">
               <img
@@ -330,15 +301,32 @@
 
             <div class="header__mobile--personal">
               <div class="header__mobile--user">
-                <div class="img__user--top"></div>
-                <div class="img__user--bottom"></div>
+                <div class="img__user--top"
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 4px 4px;
+                    border: solid 2px white;
+                    border-radius: 8px;
+                  "
+                ></div>
+                <div class="img__user--bottom"
+                  style="
+                    width: 16px;
+                    height: 6px;
+                    margin: 4px 0 0;
+                    border: solid 2px white;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                    border-bottom-color: transparent;
+                  "
+                ></div>
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="23"
                 viewBox="0 0 24 23"
-                class="header__mobile--cart"
               >
                 <circle
                   data-name="Ellipse 158"
@@ -382,7 +370,6 @@
               </svg>
             </div>
           </div>
-          
         </div>
 
         <div class="header__menu">

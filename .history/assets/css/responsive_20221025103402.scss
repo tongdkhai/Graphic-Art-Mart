@@ -30,6 +30,12 @@ $cerulean: #0497d8;
   .Rectangle {
     display: none;
   }
+  .img {
+    &__search {
+      margin: 1.5px 12px 0.5px 13px;
+    }
+  }
+
   .header {
     &__logo {
       margin: 8.6px 0 11.9px 0;
@@ -43,6 +49,11 @@ $cerulean: #0497d8;
       color: #fff;
       height: 75.4px;
     }
+
+    &__input,
+    &__button {
+      display: none;
+    }
     &__delivery {
       display: none;
     }
@@ -54,10 +65,10 @@ $cerulean: #0497d8;
     }
     &__mobile {
       &--personal {
-        @include flex(center);
+        display: flex;
       }
       &--list {
-        @include flex(center);
+        @include flex(center, flex-start);
       }
     }
   }
@@ -65,13 +76,5 @@ $cerulean: #0497d8;
 
 // Mobile
 @media only screen and (max-width: 767px) {
-  // .header {
-  //   &__mobile {
-  //     &--search {
-  //       &-input {
-  //         width: 400px;
-  //       }
-  //     }
-  //   }
-  // }
+ 
 }
