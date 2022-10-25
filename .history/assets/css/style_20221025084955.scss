@@ -159,7 +159,7 @@ a {
     right: 0;
     top: 0;
     z-index: 2;
-    &:hover {
+    :hover {
       cursor: pointer;
     }
   }
@@ -456,9 +456,6 @@ a {
     object-fit: contain;
     z-index: 2;
     left: 16px;
-    &:hover {
-      cursor: pointer;
-    }
   }
   &__phone {
     margin-top: 8px;

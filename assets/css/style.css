@@ -165,6 +165,9 @@ a {
   top: 0;
   z-index: 2;
 }
+.header__button:hover {
+  cursor: pointer;
+}
 .header__delivery {
   display: flex;
   align-items: center;
@@ -548,6 +551,9 @@ a {
   object-fit: contain;
   z-index: 2;
   left: 16px;
+}
+.img__search:hover {
+  cursor: pointer;
 }
 .img__phone {
   margin-top: 8px;
