@@ -37,9 +37,7 @@ $cerulean: #0497d8;
       padding-top: 11px;
     }
     &__right {
-      width: 100%;
-      padding-bottom: 11px;
-      @include flex(center, center);
+      justify-content: center;
     }
   }
 }

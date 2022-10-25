@@ -39,9 +39,16 @@ a {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 15px;
 }
 
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.nav__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,12 +62,14 @@ a {
   margin: 11px 0px 12px 0;
 }
 .nav__left--item {
-  width: 291px;
   margin-right: 37px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
+}
+.nav__left--item:last-child {
+  margin-right: 0;
 }
 .nav__left--text {
   margin-left: 7px;
@@ -87,6 +96,7 @@ a {
   color: #23499f;
   font-family: ProximaNova;
   margin-left: 9px;
+  margin-top: 3px;
 }
 .nav__right {
   width: calc(100% - 291px - 291px - 74px);
@@ -99,6 +109,9 @@ a {
 }
 .nav__right--list li {
   margin: 0px -3px 3px 0px;
+}
+.nav__right--list li:first-child a {
+  margin-left: 0;
 }
 .nav__right--list a {
   font-size: 16px;
@@ -144,6 +157,7 @@ a {
   flex-grow: 1;
   height: 48px;
   padding-left: 46px;
+  padding-right: 110px;
   width: 100%;
   z-index: 1;
   position: relative;
@@ -618,7 +632,6 @@ a {
 
 .Rectangle {
   background-color: #f6f6f6;
-  height: 43px;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;

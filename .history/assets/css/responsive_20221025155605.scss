@@ -36,11 +36,6 @@ $cerulean: #0497d8;
       margin-top: 0;
       padding-top: 11px;
     }
-    &__right {
-      width: 100%;
-      padding-bottom: 11px;
-      @include flex(center, center);
-    }
   }
 }
 // Tablet

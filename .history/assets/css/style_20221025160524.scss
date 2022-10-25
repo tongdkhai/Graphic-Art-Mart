@@ -17,6 +17,7 @@ $cerulean: #0497d8;
   max-width: 1920px;
   margin: 0 auto;
   color: $text-color;
+  padding: 0 15px;
 }
 
 *,
@@ -50,7 +51,6 @@ a {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 15px;
 }
 
 //Mixin
@@ -83,18 +83,15 @@ a {
     @include flex(flex-start, flex-start);
     margin: 11px 0px 12px 0;
     &--item {
-      // width: 291px;
+      width: 291px;
       margin-right: 37px;
       @include flex(center, flex-start);
-      &:last-child {
-        margin-right: 0;
-      }
     }
     &--text {
       margin-left: 7px;
       @include text(14px, normal);
       line-height: 18px;
-      margin-top: 3px;
+      margin-top: 3px
     }
     &--title {
       @include text(14px, bold, $blue-color);

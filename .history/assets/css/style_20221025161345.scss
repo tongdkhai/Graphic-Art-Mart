@@ -83,7 +83,7 @@ a {
     @include flex(flex-start, flex-start);
     margin: 11px 0px 12px 0;
     &--item {
-      // width: 291px;
+      width: 291px;
       margin-right: 37px;
       @include flex(center, flex-start);
       &:last-child {

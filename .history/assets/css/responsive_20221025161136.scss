@@ -45,6 +45,9 @@ $cerulean: #0497d8;
 }
 // Tablet
 @media only screen and (max-width: 1024px) {
+  .container {
+    // margin: 0;
+  }
   .Rectangle {
     display: none;
   }
