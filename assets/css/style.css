@@ -122,7 +122,7 @@ a {
 }
 .header__search {
   position: relative;
-  width: calc(100% - 274px - 200px - 200px - 26px - 4.13%);
+  width: calc(100% - 274px - 420px - 26px - 4.13%);
   height: 48px;
   margin: 24px 79.6px 25px 52px;
   display: flex;
@@ -173,7 +173,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  width: 200px;
+  width: 210px;
   height: 48px;
   margin-right: 80.8px;
 }
@@ -195,7 +195,7 @@ a {
   margin-top: 1px;
 }
 .header__contact {
-  width: 200px;
+  width: 210px;
   height: 48px;
   display: flex;
   align-items: center;
@@ -560,6 +560,7 @@ a {
 }
 .img__truck {
   width: 87.5px;
+  margin: 2.5px 17px 5.5px 0px;
 }
 
 .active {

@@ -1,9 +1,0 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url(../fonts/proximanovabold.woff2);
-  font-weight: bold;
-}
-body{
-	background: #ff0099;
-	font-family: myFirstFont;
-}
