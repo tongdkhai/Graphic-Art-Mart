@@ -68,11 +68,13 @@ $cerulean: #0497d8;
 
 // Mobile
 @media only screen and (max-width: 767px) {
-  .header {
-    &__mobile {
-      &--mobile {
-        width: 50%;
-      }
-    }
-  }
+  // .header {
+  //   &__mobile {
+  //     &--search {
+  //       &-input {
+  //         width: 400px;
+  //       }
+  //     }
+  //   }
+  // }
 }

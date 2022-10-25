@@ -34,6 +34,14 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
+  .header__mobile--mobile {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__mobile--mobile {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

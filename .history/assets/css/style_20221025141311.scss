@@ -12,6 +12,7 @@ $cerulean: #0497d8;
   src: url(./assets/fonts/ProximaNova_Regular.otf);
 }
 
+
 //App
 .app {
   max-width: 1920px;
@@ -52,6 +53,7 @@ a {
   width: 100%;
 }
 
+
 //Mixin
 @mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
   display: flex;
@@ -71,6 +73,7 @@ a {
   color: $text-color;
   font-family: ProximaNova;
 }
+
 
 // Navigation
 .nav {
