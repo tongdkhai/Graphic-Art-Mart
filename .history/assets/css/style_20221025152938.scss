@@ -550,6 +550,8 @@ a {
   }
   &__search {
     position: absolute;
+    width: 18px;
+    height: 18px;
     margin: 1.5px 12px 5.5px -4px;
     object-fit: contain;
     z-index: 2;

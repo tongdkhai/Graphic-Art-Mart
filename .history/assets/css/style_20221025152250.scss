@@ -178,11 +178,9 @@ a {
       @include text(14px, bold, #505050);
       margin-left: 8px;
     }
-    &--text {
-      margin-left: 1px;
-    }
     &--time {
       font-size: 22px;
+      font-weight: 300;
     }
   }
   &__contact {
@@ -192,7 +190,7 @@ a {
     &--phone-number {
       height: 37px;
       width: 166px;
-      margin: 10px 7px 4px 0.8px;
+      margin: 6px 7px 4px 0.8px;
       @include text(27px, normal);
     }
   }
@@ -550,6 +548,8 @@ a {
   }
   &__search {
     position: absolute;
+    width: 18px;
+    height: 18px;
     margin: 1.5px 12px 5.5px -4px;
     object-fit: contain;
     z-index: 2;

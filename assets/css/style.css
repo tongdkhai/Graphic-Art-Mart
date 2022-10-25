@@ -110,7 +110,7 @@ a {
   text-align: left;
   color: #2a2a2a;
   font-family: ProximaNova;
-  margin-left: 48px;
+  margin-left: 51px;
 }
 .nav__right--list a:hover {
   color: #0497d8;
@@ -128,7 +128,7 @@ a {
   position: relative;
   width: calc(100% - 274px - 420px - 26px - 4.13%);
   height: 48px;
-  margin: 21px 57.6px 27px 49px;
+  margin: 23px 57.6px 27px 49px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -193,9 +193,11 @@ a {
   font-family: ProximaNova;
   margin-left: 8px;
 }
+.header__delivery--text {
+  margin-left: 1px;
+}
 .header__delivery--time {
   font-size: 22px;
-  font-weight: 300;
 }
 .header__contact {
   width: 210px;
@@ -208,7 +210,7 @@ a {
 .header__contact--phone-number {
   height: 37px;
   width: 166px;
-  margin: 6px 7px 4px 0.8px;
+  margin: 10px 7px 4px 0.8px;
   font-size: 27px;
   font-weight: normal;
   font-stretch: normal;
@@ -651,8 +653,6 @@ a {
 }
 .img__search {
   position: absolute;
-  width: 18px;
-  height: 18px;
   margin: 1.5px 12px 5.5px -4px;
   object-fit: contain;
   z-index: 2;
