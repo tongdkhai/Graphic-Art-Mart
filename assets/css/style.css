@@ -285,7 +285,7 @@ a {
   margin-left: 9px;
 }
 .header__login {
-  padding: 10px 24px 16px 33px;
+  padding: 14px 24px 16px 33px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -588,46 +588,141 @@ a {
   text-align: left;
   color: #505050;
   font-family: ProximaNova;
-  margin: 44px 24px 0 0;
+  margin: 44px 24px 29px 0;
   line-height: 1.22;
   text-align: center;
 }
 
-.Application__container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  height: 300px;
+.type__title {
+  height: 24px;
+  margin: 70px 24px 22px;
+  font-size: 18px;
+  text-align: center;
+  color: #505050;
+}
+
+.application {
   margin-bottom: 70px;
 }
-.Application--item {
-  width: 25%;
-  height: 280px;
-  padding: 13px 12px 20px 12px;
+.application__item {
+  width: calc((100% - 72px) / 4);
+  height: 273px;
+  padding: 13px 12px 0 12px;
+  border-radius: 5px;
 }
-.Application--item-background {
-  width: 100%;
+.application__item--background {
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
 }
-.Application--heading {
-  height: 24px;
-  margin-top: 14px;
+.application__item--heading {
   font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
   color: #505050;
+  margin: 12px 145px 86px 12px;
 }
-.Application--heading-active {
-  color: #0497d8;
+.application__type {
+  margin-bottom: 40px;
+}
+.application__type--item {
+  padding: 12px 12px 16px;
+  width: 16.67%;
+}
+.application__type--img {
+  height: 200px;
+  object-fit: contain;
+}
+.application__type--heading {
+  margin-top: 14px;
+  font-size: 18px;
   font-weight: bold;
+  color: #2a2a2a;
+}
+.application__button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 110px;
+}
+.application__button--btn {
+  width: 138px;
+  height: 46px;
+  padding: 12px 50px;
+  background-color: #0497d8;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 61px;
+}
+.contact__question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.contact__text {
+  color: #505050;
+  font-size: 15px;
+}
+.contact__highlight {
+  font-size: 16px;
+  color: #0497d8;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.subscribe {
+  background-color: #000;
+  height: 250px;
+  color: #fff;
+}
+.subscribe__title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 49px;
+  padding-bottom: 15px;
+}
+.subscribe__desc {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.subscribe__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.subscribe__input {
+  margin-right: 8px;
+  outline: none;
+  padding: 12px 127px 12px 14px;
+  border-radius: 10px;
+  height: 44px;
+  background-color: #fff;
+}
+.subscribe__input:focus {
+  border: 2px solid #0497d8;
+}
+.subscribe__input:nth-child(3) {
+  padding: 13px 224px 13px 14px;
+}
+.subscribe__btn {
+  padding: 11px 48px;
+  border-radius: 10px;
+  height: 46px;
+  width: 156px;
+  background-color: #0497d8;
+  color: #fff;
+  cursor: pointer;
 }
 
 .Rectangle {
@@ -704,10 +799,37 @@ a {
 .active-application {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   border: solid 2px #1d57d9;
-  background-color: var(--white);
+  background-color: white;
 }
 .active-scroll {
   background-color: #0497d8;
+}
+.active-heading {
+  color: #0497d8;
+  font-weight: bold;
+}
+
+/* smaller, dark, rounded square */
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  background: none;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: #505050;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+  top: 110px;
+}
+
+.flickity-prev-next-button.next {
+  right: -40px;
+  top: 110px;
 }
 
 .cerulean {
@@ -724,6 +846,14 @@ a {
 
 .blue {
   background-color: #23499f;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
 }
 
 /*# sourceMappingURL=style.css.map */

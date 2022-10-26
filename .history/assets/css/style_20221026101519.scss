@@ -1,0 +1,615 @@
+$blue-color: #23499f;
+$gray-l-1: #f6f6f6;
+$text-color: #2a2a2a;
+$gray-m-1: #d9d9d9;
+$gray-d-1: #888888;
+$gray-d-3: #2a2a2a;
+$cerulean: #0497d8;
+
+// Font
+@font-face {
+  font-family: ProximaNoVa;
+  src: url(./assets/fonts/ProximaNova_Regular.otf);
+}
+
+//App
+.app {
+  max-width: 1920px;
+  margin: 0 auto;
+  color: $text-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: ProximaNova;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+//Mixin
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+
+@mixin text($font-size: 14px, $font-weight: normal, $text-color: $gray-d-3) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color;
+  font-family: ProximaNova;
+}
+
+// Navigation
+.nav {
+  @include flex(center, space-between);
+  &__container {
+    @include flex(center, space-between);
+  }
+  &__left {
+    @include flex(flex-start, flex-start);
+    margin: 11px 0px 12px 0;
+    &--item {
+      // width: 291px;
+      margin-right: 37px;
+      @include flex(center, flex-start);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &--text {
+      margin-left: 7px;
+      @include text(14px, normal);
+      line-height: 18px;
+      margin-top: 3px;
+    }
+    &--title {
+      @include text(14px, bold, $blue-color);
+      margin-left: 9px;
+      margin-top: 3px;
+    }
+  }
+  &__right {
+    width: calc(100% - 291px - 291px - 74px);
+    &--list {
+      @include flex(flex-start, flex-end);
+    }
+    &--list li {
+      margin: 0px -3px 3px 0px;
+    }
+    &--list li:first-child a {
+      margin-left: 0;
+    }
+    &--list a {
+      @include text(16px, bold);
+      margin-left: 51px;
+      &:hover {
+        color: $cerulean;
+      }
+    }
+  }
+}
+
+// Header
+.header {
+  &__info {
+    background-color: #fff;
+  }
+  &__logo {
+    &--img {
+      width: 274px;
+      height: 58.5px;
+      object-fit: contain;
+    }
+  }
+  &__search {
+    position: relative;
+    width: calc(100% - 274px - 420px - 26px - 4.13%);
+    height: 48px;
+    margin: 23px 57.6px 27px 49px;
+    @include flex(center);
+  }
+  &__input {
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: ProximaNova;
+    border-radius: 10px;
+    border: solid 2px $gray-m-1;
+    flex-grow: 1;
+    height: 48px;
+    padding-left: 46px;
+    padding-right: 110px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    &:focus {
+      border-color: $cerulean;
+    }
+  }
+  &__button {
+    background-color: $blue-color;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: ProximaNova;
+    height: 47px;
+    padding: 13px 29px 16px 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 104px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__delivery {
+    @include flex(center);
+    width: 210px;
+    height: 48px;
+    margin-right: 80.8px;
+    &--item {
+      @include text(14px, bold, #505050);
+      margin-left: 8px;
+    }
+    &--text {
+      margin-left: 1px;
+    }
+    &--time {
+      font-size: 22px;
+    }
+  }
+  &__contact {
+    width: 210px;
+    height: 48px;
+    @include flex(center);
+    &--phone-number {
+      height: 37px;
+      width: 166px;
+      margin: 10px 7px 4px 0.8px;
+      @include text(27px, normal);
+    }
+  }
+  &__menu {
+    width: 100%;
+    height: 50px;
+    background-color: #3b3a3b;
+    @include text(14px, bold, white);
+    &--list {
+      @include flex(center, space-between);
+      color: #fff;
+    }
+    &--list > li {
+      padding: 12px 40px 15px 39px;
+      :hover {
+        color: $cerulean;
+      }
+    }
+    &--list a {
+      text-decoration: none;
+      color: #fff;
+    }
+    &--right {
+      @include flex(center, space-between);
+      // @include text(14px, bold);
+    }
+    &--home {
+      @include text(14px, bold, white);
+      margin-left: 9px;
+    }
+  }
+  &__login {
+    padding: 14px 24px 16px 33px;
+    @include flex(center);
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      color: $cerulean;
+    }
+  }
+  &__cart {
+    padding: 14px 7px 15px 34px;
+    @include flex(center);
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      color: $cerulean;
+    }
+  }
+  &__order {
+    padding: 4.1px 9.6px;
+    margin-right: 24px;
+    margin-bottom: 6px;
+    background-color: $cerulean;
+    border-radius: 20px;
+    &--text {
+      @include text(14px, bold);
+      text-align: center;
+      color: #fff;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__mobile {
+    &--list {
+      margin-bottom: 10px;
+      display: none;
+      // position: relative;
+    }
+    &--icon {
+      padding: 5px 38px 5px 20px;
+      margin-top: 2px;
+    }
+    &--line {
+      width: 20px;
+      height: 2px;
+      margin: 5px 0 0;
+      background-color: white;
+    }
+    &--search {
+      margin: 10px 12px 0 0;
+      &-input {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: none;
+        transform: translateY(-800%);
+        transition: transform linear 0.3s;
+      }
+      &-button {
+        background-color: $blue-color;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: ProximaNova;
+        height: 47px;
+        padding: 13px 29px 16px 20px;
+        width: 104px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &-checkbox {
+        display: none;
+        &:checked ~ .header__mobile--search-input {
+          display: block;
+          transform: translateY(0%);
+        }
+      }
+      &-close {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        margin: 1.5px 12px 0.5px 0;
+        object-fit: contain;
+        z-index: 3;
+        top: 13px;
+        left: 14px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    &--input {
+      outline: none;
+      background-color: #fff;
+      font-size: 14px;
+      width: 100%;
+      font-family: ProximaNova;
+      border: solid 2px $gray-m-1;
+      flex-grow: 1;
+      height: 48px;
+      padding-left: 42px;
+      z-index: 1;
+      position: relative;
+      &:focus {
+        border-color: $cerulean;
+      }
+    }
+    &--personal {
+      @include flex(center, flex-end);
+      display: none;
+    }
+    &--user {
+      margin: 0px 37px 0px 0px;
+    }
+    &--cart {
+      margin: 9px 17px 6px 0;
+      width: 22px;
+      height: 21px;
+    }
+    &--checkbox {
+      display: none;
+      &:checked ~ .header__mobile--overlay {
+        display: block;
+      }
+      &:checked ~ .header__mobile--mobile {
+        display: block;
+        transform: translateX(0%);
+      }
+    }
+    &--overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: none;
+    }
+    &--mobile {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 1000px;
+      max-width: 100%;
+      background-color: #fff;
+      transform: translateX(-100%);
+      transition: transform linear 0.3s;
+      display: none;
+      z-index: 1;
+      &--list {
+        margin: 42px 0 0 32px;
+      }
+      &--list > li {
+        margin: 20px 0;
+      }
+      &--list a {
+        width: 100%;
+        text-decoration: none;
+        position: relative;
+        @include text(16px, bold);
+        &:hover {
+          color: $cerulean;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          bottom: 0;
+          height: 22px;
+          width: 180px;
+        }
+      }
+    }
+    &--close {
+      &--img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+// Body
+.home {
+  margin: 20px 0 57px 8px;
+  &__category {
+    @include text(12px, normal, $gray-d-1);
+  }
+  &--space {
+    color: transparent;
+  }
+}
+
+// Title
+.title {
+  max-width: 1440px;
+  margin-left: 35px;
+  padding-top: 7px;
+  text-align: center;
+  margin-bottom: 24px;
+  &--text {
+    width: 100%;
+    margin: 57px 2px 18px 0;
+    @include text(43.5px, bold);
+  }
+}
+// Banner
+.banner {
+  @include flex(center, center);
+  flex-direction: row;
+  // width: 100%;
+  gap: 56px;
+  @include text(26px, bold);
+  border-bottom: 1px solid $blue-color;
+  margin-bottom: 35px;
+  &--item {
+    padding-bottom: 10px;
+    margin: 0 0 0 0;
+  }
+}
+
+//Line
+.line {
+  width: 100%;
+  height: 9px;
+  // margin: 35px 0 44px 81px;
+  border-radius: 4.5px;
+  border: solid 1px $gray-d-1;
+  position: relative;
+  &__item {
+    position: absolute;
+    width: 25%;
+    height: 8px;
+    // margin: 35px 12px 44px 0;
+    border-radius: 4.5px;
+    margin: 0;
+  }
+}
+
+//subtitle
+.subtitle {
+  height: 24px;
+  @include text(18px, normal, #505050);
+  margin: 44px 24px 0 0;
+  line-height: 1.22;
+  text-align: center;
+}
+
+.application {
+  &__container {
+
+  }
+  &__item {
+    width: calc((100% - 72px) / 4);
+    height: 273px;
+    margin-right: 10px;
+    border-radius: 5px;
+    &--background {
+      height: 200px;
+      @include flex(center, center);
+    }
+    &--heading {
+      font-size: 22px;
+      color: #505050;
+      margin: 12px 145px 86px 12px;
+    }
+  }
+}
+
+.Rectangle {
+  background-color: $gray-l-1;
+  @include text(14px, normal);
+  &__container {
+    @include flex(center, space-between);
+    position: relative;
+  }
+  &__container-4 {
+    @include flex(center, space-between);
+  }
+}
+
+.img {
+  &__location {
+    margin: 1px 8px 1px 0;
+    object-fit: contain;
+  }
+  &__home {
+    object-fit: contain;
+    margin-right: 8px;
+  }
+  &__search {
+    position: absolute;
+    margin: 1.5px 12px 5.5px -4px;
+    object-fit: contain;
+    z-index: 2;
+    left: 16px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__phone {
+    margin: 2px 5.8px 0 0;
+  }
+  &__truck {
+    width: 100.5px;
+    margin: 2.5px 3px 5.5px 0px;
+  }
+  &__user {
+    &--top {
+      width: 9px;
+      height: 9px;
+      margin: 0 4px 2px;
+      border: solid 2px white;
+      border-radius: 8px;
+    }
+    &--bottom {
+      width: 16px;
+      height: 8px;
+      border: solid 2px white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.active {
+  color: $cerulean;
+  border-bottom: 4px solid $cerulean;
+  &-application {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #1d57d9;
+    background-color: var(--white);
+  }
+  &-scroll {
+    background-color: $cerulean;
+  }
+}
+
+// Color
+.cerulean {
+  background-color: $cerulean;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: $blue-color;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}

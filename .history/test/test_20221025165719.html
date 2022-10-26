@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2.3.0/dist/flickity.css"
+    />
+    <link rel="stylesheet" href="./flickity-master/css/flickity.css" />
+    <style>
+      /* external css: flickity.css */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .carousel {
+        background: #fafafa;
+      }
+
+      .carousel-cell {
+        width: 66%;
+        height: 200px;
+        margin-right: 10px;
+        background: #8c8;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+      }
+
+      /* cell number */
+      .carousel-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(carousel-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flickity - freeScroll, wrapAround</h1>
+
+    <!-- Flickity HTML init -->
+    <div
+      class="carousel"
+      data-flickity='{ "freeScroll": true, "wrapAround": true }'
+    >
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./image.jpg" alt="" />
+      </div>
+    </div>
+    <script type="text/javascript" src="./docs/flickity.pkgd.min.js"></script>
+  </body>
+</html>

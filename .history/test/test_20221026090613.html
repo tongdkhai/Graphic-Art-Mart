@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2.3.0/dist/flickity.css"
+    />
+    <style>
+      .carousel {
+        background-color: red;
+      }
+      .carousel-cell {
+        background-color: #fa23e3;
+        width: 100px;
+        height: 100px;
+        width: 66%;
+        height: 200px;
+        margin-right: 10px;
+        background: #8c8;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+      }
+      /* cell number */
+      .carousel-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(carousel-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+      }
+
+      .text {
+        color: #000000;
+      }
+      .img {
+        padding: 10px 20px;
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .text {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Lorem ipsum, dolor sit amet consectetur</h1>
+    <div class="Application-Feature">
+        <div
+          class="container-test Application__container"
+          data-flickity='{ "wrapAround": true }'
+        >
+          <div class="Application--item cerulean">
+            <div class="Application--item-background cerulean">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="146.788"
+                height="146.788"
+                viewBox="0 0 146.788 146.788"
+                class="Application--item-img"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <g id="sun" transform="translate(2 2)">
+                  <ellipse
+                    id="Ellipse_164"
+                    data-name="Ellipse 164"
+                    class="cls-1"
+                    cx="32.452"
+                    cy="32.452"
+                    rx="32.452"
+                    ry="32.452"
+                    transform="translate(38.942 38.943)"
+                  />
+                  <line
+                    id="Line_576"
+                    data-name="Line 576"
+                    class="cls-1"
+                    y2="12.981"
+                    transform="translate(71.394 0)"
+                  />
+                  <line
+                    id="Line_577"
+                    data-name="Line 577"
+                    class="cls-1"
+                    y2="12.981"
+                    transform="translate(71.394 129.808)"
+                  />
+                  <line
+                    id="Line_578"
+                    data-name="Line 578"
+                    class="cls-1"
+                    x2="9.216"
+                    y2="9.216"
+                    transform="translate(20.899 20.9)"
+                  />
+                  <line
+                    id="Line_579"
+                    data-name="Line 579"
+                    class="cls-1"
+                    x2="9.216"
+                    y2="9.216"
+                    transform="translate(112.673 112.674)"
+                  />
+                  <line
+                    id="Line_580"
+                    data-name="Line 580"
+                    class="cls-1"
+                    x2="12.981"
+                    transform="translate(0 71.395)"
+                  />
+                  <line
+                    id="Line_581"
+                    data-name="Line 581"
+                    class="cls-1"
+                    x2="12.981"
+                    transform="translate(129.807 71.395)"
+                  />
+                  <line
+                    id="Line_582"
+                    data-name="Line 582"
+                    class="cls-1"
+                    y1="9.216"
+                    x2="9.216"
+                    transform="translate(20.899 112.674)"
+                  />
+                  <line
+                    id="Line_583"
+                    data-name="Line 583"
+                    class="cls-1"
+                    y1="9.216"
+                    x2="9.216"
+                    transform="translate(112.673 20.9)"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h2 class="Application--heading">Application A</h2>
+          </div>
+          <div class="Application--item">
+            <div class="Application--item-background red">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="94.865"
+                height="146.788"
+                viewBox="0 0 94.865 146.788"
+                class="Application--item-img"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <g id="award" transform="translate(2 2)">
+                  <ellipse
+                    id="Ellipse_106"
+                    data-name="Ellipse 106"
+                    class="cls-1"
+                    cx="45.433"
+                    cy="45.433"
+                    rx="45.433"
+                    ry="45.433"
+                    transform="translate(0 0)"
+                  />
+                  <path
+                    id="Path_37886"
+                    data-name="Path 37886"
+                    class="cls-1"
+                    d="M14.853,13.945,7,73.072,39.452,53.6,71.9,73.072,64.05,13.88"
+                    transform="translate(5.981 69.716)"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h2 class="Application--heading">Application B</h2>
+          </div>
+          <div class="Application--item active-application">
+            <div class="Application--item-background green">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="134"
+                height="133.808"
+                viewBox="0 0 134 133.808"
+                class="Application--item-img"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <g id="gift" transform="translate(2.362 2)">
+                  <path
+                    id="Path_37996"
+                    data-name="Path 37996"
+                    class="cls-1"
+                    d="M107.846,12V76.9H4V12"
+                    transform="translate(9.779 52.904)"
+                  />
+                  <rect
+                    id="Rectangle_1581"
+                    data-name="Rectangle 1581"
+                    class="cls-1"
+                    width="130"
+                    height="31"
+                    transform="translate(-0.362 33.62)"
+                  />
+                  <line
+                    id="Line_459"
+                    data-name="Line 459"
+                    class="cls-1"
+                    y1="96"
+                    transform="translate(64.638 33.62)"
+                  />
+                  <path
+                    id="Path_37997"
+                    data-name="Path 37997"
+                    class="cls-1"
+                    d="M50.433,34.452H21.226A16.226,16.226,0,0,1,21.226,2C43.942,2,50.433,34.452,50.433,34.452Z"
+                    transform="translate(15.27 -2)"
+                  />
+                  <path
+                    id="Path_37998"
+                    data-name="Path 37998"
+                    class="cls-1"
+                    d="M12,34.452H41.207A16.226,16.226,0,0,0,41.207,2C18.49,2,12,34.452,12,34.452Z"
+                    transform="translate(53.702 -2)"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h2 class="Application--heading Application--heading-active">
+              Application C
+            </h2>
+          </div>
+          <div class="Application--item">
+            <div class="Application--item-background blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="120.827"
+                height="133.808"
+                viewBox="0 0 120.827 133.808"
+                class="Application--item-img"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <path
+                  id="zap"
+                  class="cls-1"
+                  d="M67.9,2,3,79.885H61.413l-6.49,51.923,64.9-77.885H61.413Z"
+                  transform="translate(-1)"
+                />
+              </svg>
+            </div>
+            <h2 class="Application--heading">Application D</h2>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript" src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/css-reset-and-normalize/css/reset-and-normalize.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- Flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2.3.0/dist/flickity.css"
+    />
+    <title>Graphic Art Mart</title>
+    <style>
+      @font-face {
+        font-family: ProximaNova;
+        src: url(./assets/fonts/ProximaNova_Regular.otf);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="Rectangle">
+          <div class="container nav__container">
+            <div class="nav__left">
+              <div class="nav__left--item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15.88"
+                  height="18.965"
+                  viewBox="0 0 15.88 18.965"
+                >
+                  <g transform="translate(-2)">
+                    <path
+                      data-name="Path 38027"
+                      d="M16.88 7.94c0 5.4-6.94 10.025-6.94 10.025S3 13.338 3 7.94a6.94 6.94 0 1 1 13.88 0z"
+                      style="
+                        fill: none;
+                        stroke: #505050;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      "
+                    />
+                    <circle
+                      data-name="Ellipse 132"
+                      cx="2.313"
+                      cy="2.313"
+                      r="2.313"
+                      transform="translate(7.627 5.627)"
+                      style="
+                        fill: none;
+                        stroke: #505050;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      "
+                    />
+                  </g>
+                </svg>
+                <span class="nav__left--text">Your delivery location is: </span
+                ><span class="nav__left--title">Melbourne, 3000</span>
+              </div>
+              <div class="nav__left--item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17.3"
+                  height="19"
+                  viewBox="0 0 17.3 19"
+                >
+                  <path
+                    data-name="Path 38007"
+                    d="M3 7.95 10.65 2l7.65 5.95v9.35a1.7 1.7 0 0 1-1.7 1.7H4.7A1.7 1.7 0 0 1 3 17.3z"
+                    transform="translate(-2 -1)"
+                    style="
+                      fill: none;
+                      stroke: #505050;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  />
+                  <path
+                    data-name="Path 38008"
+                    d="M9 20.5V12h5.1v8.5"
+                    transform="translate(-2.9 -2.5)"
+                    style="
+                      fill: none;
+                      stroke: #505050;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  />
+                </svg>
+                <span class="nav__left--text">Your store is: </span
+                ><span class="nav__left--title">Sunshine, 3020</span>
+              </div>
+            </div>
+            <div class="nav__right">
+              <ul class="nav__right--list">
+                <li>
+                  <a href="#">Compare</a>
+                </li>
+                <li>
+                  <a href="#">Store Locator</a>
+                </li>
+                <li>
+                  <a href="#">Product Selection Tool</a>
+                </li>
+                <li>
+                  <a href="#">Corporates</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__info">
+          <div class="container Rectangle__container">
+            <div class="header__mobile--list">
+              <label
+                for="header__mobile--checkbox"
+                class="header__mobile--icon"
+              >
+                <div class="header__mobile--line"></div>
+                <div class="header__mobile--line"></div>
+                <div class="header__mobile--line"></div>
+              </label>
+              <!-- Header mobile menu bars -->
+              <input
+                type="checkbox"
+                id="header__mobile--checkbox"
+                class="header__mobile--checkbox"
+              />
+
+              <label
+                for="header__mobile--checkbox"
+                class="header__mobile--overlay"
+              >
+              </label>
+
+              <div class="header__mobile--mobile">
+                <label for="header__mobile--checkbox">
+                  <img
+                    src="./assets/img/close.png"
+                    alt="i"
+                    class="header__mobile--close--img"
+                  />
+                </label>
+                <ul class="header__mobile--mobile--list">
+                  <li>
+                    <a href="#">Product</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Brands</a>
+                  </li>
+                  <li>
+                    <a href="#">Resources</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Stores</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Header mobile search -->
+              <label for="header__mobile--search-checkbox">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.414"
+                  height="20.414"
+                  viewBox="0 0 20.414 20.414"
+                  class="header__mobile--search"
+                >
+                  <g transform="translate(-2 -2)">
+                    <circle
+                      data-name="Ellipse 153"
+                      cx="8"
+                      cy="8"
+                      r="8"
+                      transform="translate(3 3)"
+                      style="
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      "
+                    />
+                    <path
+                      data-name="Line 547"
+                      transform="translate(16.65 16.65)"
+                      style="
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      "
+                      d="M4.35 4.35 0 0"
+                    />
+                  </g>
+                </svg>
+              </label>
+
+              <input
+                type="checkbox"
+                id="header__mobile--search-checkbox"
+                class="header__mobile--search-checkbox"
+              />
+
+              <div class="header__mobile--search-input">
+                <label for="header__mobile--search-checkbox">
+                  <img
+                    src="./assets/img/close.png"
+                    alt="Close"
+                    class="header__mobile--search-close"
+                  />
+                </label>
+
+                <input
+                  type="text"
+                  class="header__mobile--input"
+                  placeholder="What can we help you find today?"
+                />
+                <button class="header__mobile--search-button">Search</button>
+              </div>
+            </div>
+            <div class="header__logo">
+              <img
+                src="./assets/img/logo.png"
+                alt="Logo"
+                class="header__logo--img"
+              />
+            </div>
+            <div class="header__search">
+              <input
+                type="text"
+                class="header__input"
+                placeholder="What can we help you find today?"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20.414"
+                height="20.414"
+                viewBox="0 0 20.414 20.414"
+                class="img__search"
+              >
+                <g transform="translate(-2 -2)">
+                  <circle
+                    data-name="Ellipse 153"
+                    cx="8"
+                    cy="8"
+                    r="8"
+                    transform="translate(3 3)"
+                    style="
+                      fill: none;
+                      stroke: #2a2a2a;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  />
+                  <path
+                    data-name="Line 547"
+                    transform="translate(16.65 16.65)"
+                    style="
+                      fill: none;
+                      stroke: #2a2a2a;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                    d="M4.35 4.35 0 0"
+                  />
+                </g>
+              </svg>
+              <button class="header__button">Search</button>
+            </div>
+
+            <div class="header__delivery">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56.5"
+                height="37"
+                viewBox="0 0 56.457 37.003"
+                class="img__truck"
+              >
+                <path
+                  data-name="Path 262"
+                  d="M57.219,29.954a4.482,4.482,0,0,0-4.032-2.492H42.592V24.179a3.676,3.676,0,0,0-3.672-3.672H14.931a3.676,3.676,0,0,0-3.672,3.672h2.378a1.3,1.3,0,0,1,1.293-1.293h23.99a1.3,1.3,0,0,1,1.293,1.293V50.1H26.76v2.378H44.1a6.217,6.217,0,0,0,12.205,0h3.961a1.189,1.189,0,0,0,1.189-1.189h0V38.713a1.185,1.185,0,0,0-.125-.532Zm-4.032-.114a2.117,2.117,0,0,1,1.9,1.177l3.988,7.976v.817H42.592v-9.97ZM50.2,55.13a3.842,3.842,0,1,1,3.841-3.842h0A3.846,3.846,0,0,1,50.2,55.13Zm6.1-5.03a6.217,6.217,0,0,0-12.205,0H42.592V42.189H59.079V50.1Zm-45.5,1.189h2.378a3.842,3.842,0,0,0,7.683,0H23.25a6.22,6.22,0,1,1-12.439,0Zm1.856-21.473a1.189,1.189,0,1,1-.006-2.378h13.9a1.189,1.189,0,1,1,.005,2.378H12.667ZM5,34.5a1.189,1.189,0,0,1,1.189-1.189H23.427a1.189,1.189,0,0,1,0,2.378H6.189A1.189,1.189,0,0,1,5,34.5Zm15.3,4.688a1.189,1.189,0,0,1,0,2.378H13.918a1.189,1.189,0,1,1-.005-2.378H20.3ZM5,46.258a1.189,1.189,0,0,1,1.189-1.189H20.3a1.189,1.189,0,0,1,0,2.378H6.189A1.189,1.189,0,0,1,5,46.258Z"
+                  transform="translate(-5 -20.507)"
+                ></path>
+              </svg>
+              <div class="header__delivery--item">
+                <span class="header__delivery--text"> Same Day Dispatch </span>
+                <span class="header__delivery--time"> 00:34:30 </span>
+              </div>
+            </div>
+
+            <div class="header__contact">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26.434"
+                height="26.483"
+                viewBox="0 0 26.434 26.483"
+                class="img__phone"
+              >
+                <path
+                  d="M26.543 20.328v3.685a2.457 2.457 0 0 1-2.678 2.457 24.311 24.311 0 0 1-10.6-3.771 23.955 23.955 0 0 1-7.371-7.371 24.311 24.311 0 0 1-3.772-10.65A2.457 2.457 0 0 1 4.566 2h3.686a2.457 2.457 0 0 1 2.457 2.113 15.773 15.773 0 0 0 .86 3.452 2.457 2.457 0 0 1-.553 2.592l-1.56 1.56a19.655 19.655 0 0 0 7.371 7.371l1.56-1.56a2.457 2.457 0 0 1 2.592-.553 15.773 15.773 0 0 0 3.452.86 2.457 2.457 0 0 1 2.113 2.494z"
+                  transform="translate(-1.111 -1)"
+                  style="
+                    fill: none;
+                    stroke: #2a2a2a;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  "
+                />
+              </svg>
+              <span class="header__contact--phone-number"> 1300 426 278 </span>
+            </div>
+
+            <div class="header__mobile--personal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                class="header__mobile--user"
+              >
+                <g transform="translate(-3 -2)">
+                  <path
+                    data-name="Path 38138"
+                    d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  />
+                  <circle
+                    data-name="Ellipse 176"
+                    cx="4"
+                    cy="4"
+                    r="4"
+                    transform="translate(8 3)"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  />
+                </g>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="23"
+                viewBox="0 0 24 23"
+                class="header__mobile--cart"
+              >
+                <circle
+                  data-name="Ellipse 158"
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="translate(8 20)"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  "
+                />
+                <circle
+                  data-name="Ellipse 159"
+                  cx="1"
+                  cy="1"
+                  r="1"
+                  transform="translate(19 20)"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  "
+                />
+                <path
+                  data-name="Path 38095"
+                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                  style="
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  "
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu">
+          <div class="container Rectangle__container-4">
+            <div class="header__menu--left">
+              <ul class="header__menu--list">
+                <li class="">
+                  <a href="#"> Products </a>
+                </li>
+                <li class="">
+                  <a href="#"> Our Brands </a>
+                </li>
+                <li class="">
+                  <a href="#"> Resources </a>
+                </li>
+                <li class="">
+                  <a href="#"> Our Stores </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header__menu--right">
+              <div class="header__login">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="20"
+                  viewBox="0 0 18 20"
+                >
+                  <g transform="translate(-3 -2)">
+                    <path
+                      data-name="Path 38138"
+                      d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                      style="
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      "
+                    />
+                    <circle
+                      data-name="Ellipse 176"
+                      cx="4"
+                      cy="4"
+                      r="4"
+                      transform="translate(8 3)"
+                      style="
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      "
+                    />
+                  </g>
+                </svg>
+                <span class="header__menu--home"> Sign In </span>
+              </div>
+              <div class="header__cart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="23"
+                  viewBox="0 0 24 23"
+                >
+                  <circle
+                    data-name="Ellipse 158"
+                    cx="1"
+                    cy="1"
+                    r="1"
+                    transform="translate(8 20)"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  ></circle>
+                  <circle
+                    data-name="Ellipse 159"
+                    cx="1"
+                    cy="1"
+                    r="1"
+                    transform="translate(19 20)"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  ></circle>
+                  <path
+                    data-name="Path 38095"
+                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    "
+                  ></path>
+                </svg>
+                <span class="header__menu--home"> Cart </span>
+              </div>
+              <div class="header__order">
+                <span class="header__order--text"> 0 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <!-- Home -->
+        <div class="home">
+          <span class="home__category">
+            Home <span class="home--space">a</span> >
+            <span class="home--space">aa</span> Product Selection Tool
+          </span>
+        </div>
+        <!-- Title -->
+        <div class="title">
+          <span class="title--text"> Product Selection Tool </span>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+          <span class="banner--item active"> 1. Applications </span>
+          <span class="banner--item"> 2. Questions </span>
+          <span class="banner--item"> 3. Recommended Products </span>
+        </div>
+
+        <div class="line">
+          <div class="line__item active-scroll"></div>
+        </div>
+
+        <div class="subtitle">Select your application to get started:</div>
+      </div>
+
+      <!-- Flickity HTML init -->
+  <div class="container">
+      <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "pageDots": false }'>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell">
+        <div class="text flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="146.788"
+            height="146.788"
+            viewBox="0 0 146.788 146.788"
+            class="Application--item-img"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #fff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 4px;
+                }
+              </style>
+            </defs>
+            <g id="sun" transform="translate(2 2)">
+              <ellipse
+                id="Ellipse_164"
+                data-name="Ellipse 164"
+                class="cls-1"
+                cx="32.452"
+                cy="32.452"
+                rx="32.452"
+                ry="32.452"
+                transform="translate(38.942 38.943)"
+              />
+              <line
+                id="Line_576"
+                data-name="Line 576"
+                class="cls-1"
+                y2="12.981"
+                transform="translate(71.394 0)"
+              />
+              <line
+                id="Line_577"
+                data-name="Line 577"
+                class="cls-1"
+                y2="12.981"
+                transform="translate(71.394 129.808)"
+              />
+              <line
+                id="Line_578"
+                data-name="Line 578"
+                class="cls-1"
+                x2="9.216"
+                y2="9.216"
+                transform="translate(20.899 20.9)"
+              />
+              <line
+                id="Line_579"
+                data-name="Line 579"
+                class="cls-1"
+                x2="9.216"
+                y2="9.216"
+                transform="translate(112.673 112.674)"
+              />
+              <line
+                id="Line_580"
+                data-name="Line 580"
+                class="cls-1"
+                x2="12.981"
+                transform="translate(0 71.395)"
+              />
+              <line
+                id="Line_581"
+                data-name="Line 581"
+                class="cls-1"
+                x2="12.981"
+                transform="translate(129.807 71.395)"
+              />
+              <line
+                id="Line_582"
+                data-name="Line 582"
+                class="cls-1"
+                y1="9.216"
+                x2="9.216"
+                transform="translate(20.899 112.674)"
+              />
+              <line
+                id="Line_583"
+                data-name="Line 583"
+                class="cls-1"
+                y1="9.216"
+                x2="9.216"
+                transform="translate(112.673 20.9)"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+    </div>
+  </div>
+    <style>
+      /* external css: flickity.css */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .carousel {
+        background: #eee;
+      }
+
+      .carousel-cell {
+        width: calc((100% - 72px) / 4);
+        height: 200px;
+        margin-right: 24px;
+        background: #8c8;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+      }
+
+      /* cell number */
+    </style>
+    </div>
+
+    <!-- Flickity JS -->
+    <script
+      type="text/javascript"
+      src="./assets/js/flickity.pkgd.min.js"
+    ></script>
+  </body>
+</html>
